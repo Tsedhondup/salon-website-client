@@ -1,6 +1,7 @@
+import "./Header.scss";
 const Header = () => {
   return (
-    <section>
+    <section className="header">
       {/* Before scroll up */}
       <section>
         {/* Salon history  */}
