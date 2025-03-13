@@ -1,4 +1,28 @@
 @import "../../styles/partials/mixins.scss";
 @import "../../styles/partials/variables";
 .header {
+  padding: 16px;
+  background-color: $champagne;
+  // BEFORE SCROLL
+  &__before-scroll {
+    display: flex;
+    justify-content: space-between;
+    &--birth-year {
+      font-size: 13px;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: $tealBlue;
+    }
+    &--address-top {
+      font-size: 13px;
+      font-weight: normal;
+      text-align: right;
+      text-transform: uppercase;
+      color: $tealBlue;
+    }
+  }
+  // AFTER SCROLL
+  &__after-scroll {
+    display: none;
+  }
 }
