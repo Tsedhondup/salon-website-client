@@ -6,9 +6,8 @@ const Hero = () => {
         <h1 className="hero__merchant-name">
           Nano's <br /> beauty Salon
         </h1>
-        <h2 className="hero__page-headline">Discover the perfect looks</h2>
+        <h2 className="hero__page-headline">Discover the perfect looks!</h2>
         <div className="hero__button-container">
-          {" "}
           <button className="hero__button-container--button">
             See services
           </button>

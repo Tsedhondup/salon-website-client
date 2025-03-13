@@ -1,13 +1,22 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Header.scss";
 const Header = () => {
   return (
     <section className="header">
+      {/*  Show navigation button */}
+      <div className="header__show-nav-wrapper">
+        <FontAwesomeIcon
+          icon={faBars}
+          className="header__show-nav-wrapper--button"
+        />
+      </div>
       {/* Before scroll up */}
       <section className="header__before-scroll">
         <h2 className="header__before-scroll--birth-year">since 2022</h2>
         <h2 className="header__before-scroll--address-top">
           1530 Albion Rd, Etobicoke,
-          <span className="header__before-scroll--postal-code"> ON M9V 1B4</span>
+          <span className="header__before-scroll--postal-code">ON M9V 1B4</span>
         </h2>
       </section>
       {/* After scroll up */}
