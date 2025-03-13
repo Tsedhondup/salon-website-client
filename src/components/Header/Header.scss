@@ -3,6 +3,9 @@
 .header {
   padding: 16px;
   background-color: $champagne;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   // BEFORE SCROLL
   &__before-scroll {
     display: flex;
@@ -19,6 +22,13 @@
       text-align: right;
       text-transform: uppercase;
       color: $tealBlue;
+    }
+    // Postal code
+    &--postal-code {
+      display: none;
+      @include tablet {
+        display: inline;
+      }
     }
   }
   // AFTER SCROLL

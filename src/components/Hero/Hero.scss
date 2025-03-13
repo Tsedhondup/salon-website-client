@@ -1,2 +1,43 @@
 @import "../../styles/partials/mixins.scss";
 @import "../../styles/partials/variables";
+
+.hero {
+  padding: 16px;
+  padding-top: 64px;
+  height: 100dvh;
+  background-color: $champagne;
+  display: flex;
+  align-items: center;
+  &__merchant-name {
+    font-size: 60px;
+    color: $tealBlue;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  &__page-headline {
+    color: $greenScreen;
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-bottom: 48px;
+  }
+  &__button-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    &--button {
+      background-color: $champagne;
+      color: $tealBlue;
+      font-size: 12px;
+      text-transform: uppercase;
+      height: 40px;
+      border: 1px solid $tealBlue;
+      border-radius: 4px;
+      max-width: 120px;
+    }
+    &--button:nth-child(2) {
+      background-color: $tealBlue;
+      border: 1px solid $tealBlue;
+      color: $champagne;
+    }
+  }
+}
