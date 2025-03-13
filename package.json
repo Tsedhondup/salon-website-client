@@ -17,6 +17,7 @@
     "@fullcalendar/timegrid": "^6.1.15",
     "date-fns": "^4.1.0",
     "dotenv": "^16.4.7",
+    "fontfaceobserver": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
