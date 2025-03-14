@@ -1,13 +1,26 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { use, useState } from "react";
 import "./Header.scss";
 const Header = () => {
+  const [whiteBackgroundClass, setWhiteBackgroundClass] = useState("");
+  const [showButtonClass, setShowButtonClass] = useState("");
+  const [hideButtonClass, setHideButtonClass] = useState("");
+  const [linkClass, setLinkClass] = useState("");
+
   // HANDLER FUNCTIONS
   const hanldeWhiteBackgroundClass = () => {
     setWhiteBackgroundClass("white-background");
+    setShowButtonClass("display-none");
+    setHideButtonClass("display-block");
+    setLinkClass("display-block");
   };
-  const [whiteBackgroundClass, setWhiteBackgroundClass] = useState("");
+
+  const handleButtonClasses = () => {
+    setShowButtonClass("");
+    setHideButtonClass("");
+    setLinkClass("");
+  };
   return (
     <section className={`header ${whiteBackgroundClass}`}>
       {/*  Show navigation button */}
@@ -17,13 +30,18 @@ const Header = () => {
         </h2>
         <FontAwesomeIcon
           icon={faBars}
-          className="header__show-nav-wrapper--button"
+          className={`header__show-nav-wrapper--open-button ${showButtonClass}`}
           onClick={hanldeWhiteBackgroundClass}
+        />
+        <FontAwesomeIcon
+          icon={faXmark}
+          className={`header__show-nav-wrapper--close-button ${hideButtonClass}`}
+          onClick={handleButtonClasses}
         />
       </div>
 
-      <div className="header-links">
-        <div className="heade-links__link-container">
+      <div className={`header__links ${linkClass}`}>
+        <div className="header__link-container">
           <a href="#" className="header__link-container--link">
             Services
           </a>
