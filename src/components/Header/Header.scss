@@ -2,7 +2,8 @@
 @import "../../styles/partials/variables";
 .header {
   background-color: rgba(239, 242, 249, 0.5);
-  position: absolute;
+  background-color: $white2;
+  position: fixed;
   top: 0;
   right: 0;
   padding: 16px;
@@ -13,7 +14,6 @@
     justify-content: flex-end;
     align-items: center;
     z-index: 100;
-    margin-bottom: 32px;
     @include tablet {
       display: none;
     }
@@ -51,6 +51,7 @@
   //LINKS
   &__links {
     display: none;
+    margin-top: 32px;
   }
   // JS DYNAMIC CLASS
   .display-block {
