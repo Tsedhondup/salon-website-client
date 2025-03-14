@@ -1,41 +1,40 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 import "./Header.scss";
 const Header = () => {
+  // HANDLER FUNCTIONS
+  const hanldeWhiteBackgroundClass = () => {
+    setWhiteBackgroundClass("white-background");
+  };
+  const [whiteBackgroundClass, setWhiteBackgroundClass] = useState("");
   return (
-    <section className="header">
+    <section className={`header ${whiteBackgroundClass}`}>
       {/*  Show navigation button */}
       <div className="header__show-nav-wrapper">
+        <h2 className="header__show-nav-wrapper--brand-name">
+          Nano's Beauty Salon
+        </h2>
         <FontAwesomeIcon
           icon={faBars}
           className="header__show-nav-wrapper--button"
+          onClick={hanldeWhiteBackgroundClass}
         />
       </div>
-      {/* Before scroll up */}
-      <section className="header__before-scroll">
-        <h2 className="header__before-scroll--birth-year">since 2022</h2>
-        <h2 className="header__before-scroll--address-top">
-          1530 Albion Rd, Etobicoke,
-          <span className="header__before-scroll--postal-code">ON M9V 1B4</span>
-        </h2>
-      </section>
-      {/* After scroll up */}
-      <section className="header__after-scroll">
-        <div className="header-links">
-          <h3 className="header-links__merchant-name">Nano's Beauty Salon</h3>
-          <div className="heade-links__link-container">
-            <a href="#" className="header__link-container--link">
-              Services
-            </a>
-            <a href="#" className="header__link-container--link">
-              Contact
-            </a>
-            <a href="#" className="header__link-container--link">
-              About Us
-            </a>
-          </div>
+
+      <div className="header-links">
+        <div className="heade-links__link-container">
+          <a href="#" className="header__link-container--link">
+            Services
+          </a>
+          <a href="#" className="header__link-container--link">
+            Contact
+          </a>
+          <a href="#" className="header__link-container--link">
+            About Us
+          </a>
         </div>
-      </section>
+      </div>
     </section>
   );
 };
