@@ -1,7 +1,7 @@
+// import services from "../../data/services.json";
 const HomePageServices = () => {
   return (
     <section>
-      <h2>Our services </h2>
       <section>
         <div>
           <img />
