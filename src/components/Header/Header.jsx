@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import "./Header.scss";
 const Header = () => {
   const [whiteBackgroundClass, setWhiteBackgroundClass] = useState("");
@@ -25,19 +26,50 @@ const Header = () => {
     <section className={`header ${whiteBackgroundClass}`}>
       {/*  Show navigation button */}
       <div className="header__show-nav-wrapper">
-        <h2 className="header__show-nav-wrapper--brand-name">
+        <motion.h2
+          className="header__show-nav-wrapper--brand-name"
+          key="02"
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              ease: "linear",
+              duration: 1,
+              delay: 1,
+            },
+          }}
+          viewport={{ once: true, amount: 1 }}
+        >
           Nano's Beauty Salon
-        </h2>
-        <FontAwesomeIcon
-          icon={faBars}
-          className={`header__show-nav-wrapper--open-button ${showButtonClass}`}
-          onClick={hanldeWhiteBackgroundClass}
-        />
-        <FontAwesomeIcon
-          icon={faXmark}
-          className={`header__show-nav-wrapper--close-button ${hideButtonClass}`}
-          onClick={handleButtonClasses}
-        />
+        </motion.h2>
+        <motion.div
+          className="header__button-container"
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              ease: "linear",
+              duration: 1,
+              delay: 1.5,
+            },
+          }}
+          viewport={{ once: true, amount: 1 }}
+        >
+          <FontAwesomeIcon
+            icon={faBars}
+            className={`header__show-nav-wrapper--open-button ${showButtonClass}`}
+            onClick={hanldeWhiteBackgroundClass}
+          />
+          <FontAwesomeIcon
+            icon={faXmark}
+            className={`header__show-nav-wrapper--close-button ${hideButtonClass}`}
+            onClick={handleButtonClasses}
+          />
+        </motion.div>
       </div>
 
       <div className={`header__links ${linkClass}`}>
