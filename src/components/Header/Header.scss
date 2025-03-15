@@ -20,7 +20,7 @@
     &--brand-name {
       color: $armyBlue;
       text-transform: uppercase;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: normal;
       position: relative;
       z-index: 200;
@@ -87,6 +87,8 @@
     &--item {
       font-size: 12px;
       font-weight: normal;
+      text-decoration: none;
+      width: fit-content;
       color: $white1;
     }
     &--item:nth-child(2) {
