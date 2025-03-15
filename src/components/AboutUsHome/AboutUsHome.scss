@@ -1,9 +1,56 @@
+@import "../../styles/partials/mixins.scss";
+@import "../../styles/partials/variables";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap"); //
-* {
-  // font-family: "Roboto", sans-serif;
+// * {
+//   // font-family: "Roboto", sans-serif;
+//   font-family: "Aboreto", serif;
+//   margin: 0;
+//   width: 100%;
+//   box-sizing: border-box;
+// }
+.about-us-home {
   font-family: "Aboreto", serif;
-  margin: 0;
-  width: 100%;
-  box-sizing: border-box;
+  padding: 16px;
+  &__text-container {
+    // background-color: rgba(239, 242, 249, 0.4);
+    // background-color: rgba(97, 125, 161, 0.1);
+
+    padding: 16px;
+    margin-bottom: 16px;
+    &--header {
+      color: $darkBlue;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+    &--body {
+      color: $darkBlue;
+      font-size: 15px;
+      font-family: "Roboto", sans-serif;
+      line-height: 22px;
+    }
+  }
+  &__book-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    &--button {
+      font-size: 16px;
+      font-weight: 800;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 16px 16px;
+      border-radius: 32px;
+      max-width: 180px;
+      background-color: $darkBlue;
+      border: 1px solid $white1;
+      color: $white2;
+    }
+    &--button:hover {
+      background-color: $white2;
+      border-color: $darkBlue;
+      color: $darkBlue;
+    }
+  }
 }

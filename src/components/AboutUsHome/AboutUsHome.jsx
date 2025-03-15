@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 import "./AboutusHome.scss";
 const AboutUsHome = () => {
   return (
@@ -26,6 +28,14 @@ const AboutUsHome = () => {
             wellness, ensuring you receive the best care.
           </p>
         </div>
+      </div>
+      <div className="about-us-home__book-button-container">
+        <motion.a
+          className="about-us-home__book-button-container--button"
+          href="tel:+4167440019"
+        >
+          Book now
+        </motion.a>
       </div>
     </section>
   );

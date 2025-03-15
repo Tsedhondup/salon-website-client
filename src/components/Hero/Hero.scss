@@ -76,5 +76,10 @@
       color: $white1;
       // color: $darkBlue;
     }
+    &--book:hover {
+      background-color: $white2;
+      border-color: $darkBlue;
+      color: $darkBlue;
+    }
   }
 }
