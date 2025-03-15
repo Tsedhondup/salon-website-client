@@ -33,8 +33,8 @@ const Header = () => {
         opacity: 1,
         transition: {
           ease: "linear",
-          duration: 1.5,
-          delay: 3,
+          duration: 0.5,
+          delay: 1.5,
         },
       }}
       viewport={{ once: true, amount: 1 }}
@@ -51,8 +51,8 @@ const Header = () => {
             opacity: 1,
             transition: {
               ease: "linear",
-              duration: 1.5,
-              delay: 3.2,
+              duration: 0.5,
+              delay: 2,
             },
           }}
           viewport={{ once: true, amount: 1 }}
@@ -68,8 +68,8 @@ const Header = () => {
             opacity: 1,
             transition: {
               ease: "linear",
-              duration: 1,
-              delay: 3.2,
+              duration: 0.5,
+              delay: 2,
             },
           }}
           viewport={{ once: true, amount: 1 }}
@@ -105,15 +105,15 @@ const Header = () => {
           className="header__birth-location--item"
           initial={{
             opacity: 0,
-            y: -60,
+            // y: -60,
           }}
           whileInView={{
             opacity: 1,
-            y: 0,
+            // y: 0,
             transition: {
               ease: "linear",
-              duration: 1,
-              delay: 3,
+              duration: 0.5,
+              delay: 2,
             },
           }}
           viewport={{ once: true, amount: 1 }}
@@ -124,15 +124,15 @@ const Header = () => {
           className="header__birth-location--item"
           initial={{
             opacity: 0,
-            y: -60,
+            // x: 60,
           }}
           whileInView={{
             opacity: 1,
-            y: 0,
+            // x: 0,
             transition: {
               ease: "easeIn",
-              duration: 1,
-              delay: 3,
+              duration: 0.5,
+              delay: 2,
             },
           }}
           viewport={{ once: true, amount: 1 }}

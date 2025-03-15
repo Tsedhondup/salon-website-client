@@ -17,7 +17,7 @@ const AboutUsHome = () => {
               y: 0,
               transition: {
                 ease: "linear",
-                duration: 1,
+                duration: 0.5,
               },
             }}
             viewport={{ once: true, amount: 1 }}
@@ -35,13 +35,13 @@ const AboutUsHome = () => {
               y: 0,
               transition: {
                 ease: "linear",
-                duration: 1,
+                duration: 0.5,
               },
             }}
             viewport={{ once: true, amount: 1 }}
           >
             At Nano's Beauty Salon, we believe in enhancing beauty and
-            well-being. Founded in 2023, our salon is dedicated to providing
+            well-being. Founded in 2022, our salon is dedicated to providing
             exceptional services in a welcoming environment, ensuring every
             visit is a delightful experience.
           </motion.p>
@@ -58,7 +58,7 @@ const AboutUsHome = () => {
               y: 0,
               transition: {
                 ease: "linear",
-                duration: 1,
+                duration: 0.5,
               },
             }}
             viewport={{ once: true, amount: 1 }}
@@ -76,7 +76,7 @@ const AboutUsHome = () => {
               y: 0,
               transition: {
                 ease: "linear",
-                duration: 1,
+                duration: 0.5,
               },
             }}
             viewport={{ once: true, amount: 1 }}
@@ -97,7 +97,7 @@ const AboutUsHome = () => {
               y: 0,
               transition: {
                 ease: "linear",
-                duration: 1,
+                duration: 0.5,
               },
             }}
             viewport={{ once: true, amount: 1 }}
@@ -115,7 +115,7 @@ const AboutUsHome = () => {
               y: 0,
               transition: {
                 ease: "linear",
-                duration: 1,
+                duration: 0.5,
               },
             }}
             viewport={{ once: true, amount: 1 }}
@@ -137,7 +137,7 @@ const AboutUsHome = () => {
             transition: {
               ease: "linear",
               delay: 1,
-              duration: 1,
+              duration: 0.5,
             },
           }}
           viewport={{ once: true, amount: 1 }}

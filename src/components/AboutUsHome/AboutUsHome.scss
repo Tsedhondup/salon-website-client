@@ -9,6 +9,7 @@
 //   width: 100%;
 //   box-sizing: border-box;
 // }
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
 .about-us-home {
   font-family: "Aboreto", serif;
   padding: 16px;
@@ -21,13 +22,16 @@
     &--header {
       color: $darkBlue;
       font-size: 20px;
-      font-weight: bolder;
+      font-weight: 900;
       margin-bottom: 16px;
     }
     &--body {
       color: $darkBlue;
-      font-size: 15px;
+      font-size: 14px;
+      //   font-weight: bold;
       font-family: "Roboto", sans-serif;
+      //   font-family: "Cinzel", serif;
+
       line-height: 22px;
     }
   }

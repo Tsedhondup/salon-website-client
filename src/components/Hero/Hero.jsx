@@ -12,7 +12,7 @@ const Hero = () => {
         opacity: 1,
         transition: {
           ease: "linear",
-          duration: 1.5,
+          duration: 0.5,
         },
       }}
       viewport={{ once: true, amount: 1 }}
@@ -22,15 +22,15 @@ const Hero = () => {
           className="hero__merchant-name"
           initial={{
             opacity: 0,
-            y: 60,
+            y: 20,
           }}
           whileInView={{
             opacity: 1,
             y: 0,
             transition: {
               ease: "linear",
-              duration: 1.5,
-              delay: .5,
+              delay: 0.5,
+              duration: 0.5,
             },
           }}
           viewport={{ once: true, amount: 1 }}
@@ -41,7 +41,7 @@ const Hero = () => {
           className="hero__page-headline"
           initial={{
             opacity: 0,
-            y: 60,
+            y: 20,
             backgroundColor: "rgba(0, 0, 0, 0)",
           }}
           whileInView={{
@@ -51,9 +51,9 @@ const Hero = () => {
 
             transition: {
               ease: "linear",
-              duration: 1.5,
-              delay: 1,
-              backgroundColor: { delay: 2 },
+              delay: 0.5,
+              duration: 0.5,
+              backgroundColor: { delay: 1 },
             },
           }}
           viewport={{ once: true, amount: 1 }}
@@ -77,11 +77,11 @@ const Hero = () => {
               color: "#ffffff",
               transition: {
                 ease: "linear",
-                duration: 1.5,
-                delay: 1.5,
-                backgroundColor: { delay: 2 },
-                color: { delay: 2.5, duration: 1.7 },
-                borderColor: { delay: 3, duration: 1.9 },
+                duration: 0.5,
+                delay: 0.5,
+                backgroundColor: { delay: 1 },
+                color: { delay: 1.5, duration: 0.5 },
+                borderColor: { delay: 2, duration: 0.5 },
               },
             }}
             viewport={{ once: true, amount: 1 }}
