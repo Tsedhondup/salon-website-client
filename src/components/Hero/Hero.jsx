@@ -62,8 +62,9 @@ const Hero = () => {
           Discover the perfect looks!
         </motion.h2>
         <div className="hero__button-container">
-          <motion.button
-            className="hero__button-container--button"
+          <motion.a
+            className="hero__button-container--book"
+            href="tel:+4167440019"
             initial={{
               opacity: 0,
               color: "#000000",
@@ -87,7 +88,7 @@ const Hero = () => {
             viewport={{ once: true, amount: 1 }}
           >
             Book now
-          </motion.button>
+          </motion.a>
         </div>
       </section>
     </motion.section>

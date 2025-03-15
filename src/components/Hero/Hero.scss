@@ -23,7 +23,10 @@
   display: flex;
   align-items: normal;
   background-image: url("../../assets/images/hero-2b.jpg");
-  animation: slideBackground 30s infinite linear;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slideBackground 50s infinite linear;
 
   &__content {
     padding-top: 40%;
@@ -57,10 +60,12 @@
     justify-content: center;
     gap: 5px;
 
-    &--button {
+    &--book {
       font-size: 16px;
       font-weight: 800;
+      text-align: center;
       text-transform: uppercase;
+      text-decoration: none;
       padding: 16px 16px;
       border: 1px solid $darkBlue;
       border-radius: 32px;
