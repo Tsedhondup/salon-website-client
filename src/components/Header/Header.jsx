@@ -100,7 +100,7 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className="header__birth-location">
+      {/* <div className="header__birth-location">
         <motion.h2
           className="header__birth-location--item"
           initial={{
@@ -139,7 +139,7 @@ const Header = () => {
         >
           1530 Albion Rd, Etobicoke
         </motion.h2>
-      </div>
+      </div> */}
     </motion.section>
   );
 };

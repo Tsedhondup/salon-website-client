@@ -1,12 +1,13 @@
 // import services from "../../data/services.json";
 import nanoClientImage from "../../assets/images/nano1.jpg";
+import "./HomePageServices.scss";
 const HomePageServices = () => {
   return (
     <section className="service-home-page">
       <section className="service-home-page__content">
         <div className="image-text-container">
           <img
-            className="image-text-container"
+            className="image-text-container__image"
             src={nanoClientImage}
             alt="image from salon"
           />

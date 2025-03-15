@@ -1,0 +1,40 @@
+@import "../../styles/partials/mixins.scss";
+@import "../../styles/partials/variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap"); //
+
+.service-home-page {
+  padding: 16px;
+  margin-top: 16px;
+  margin-bottom: 170px;
+}
+
+.image-text-container {
+  position: relative;
+  &__image {
+    display: block;
+    border-radius: 20px;
+    height: 350px;
+    object-fit: cover;
+  }
+  &__texts {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    top: 88%;
+    z-index: 100;
+    background-color: $darkBlue;
+    color: $white2;
+    text-align: center;
+    line-height: 32px;
+    padding: 16px;
+    width: 94%;
+    &--header {
+      font-size: 32px;
+    }
+    &--body {
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+  }
+}
