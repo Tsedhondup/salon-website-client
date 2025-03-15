@@ -2,6 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import HomePageServiceLists from "../HomePageServiceLists/HomePageServiceLists";
+import BookButton from "../BookButton/BookButton";
 import nanoClientImage from "../../assets/images/nano1.jpg";
 import "./HomePageServices.scss";
 const HomePageServices = () => {
@@ -120,6 +121,7 @@ const HomePageServices = () => {
           </motion.div>
         </div>
       </section>
+      <BookButton />
       <HomePageServiceLists />
     </section>
   );
