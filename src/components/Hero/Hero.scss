@@ -16,8 +16,6 @@
   }
 }
 .hero {
-  padding: 16px;
-  padding-top: 64px;
   height: 100dvh;
   background-color: $champagne;
   display: flex;
@@ -27,7 +25,11 @@
   background-position: center;
   background-repeat: no-repeat;
   animation: slideBackground 30s infinite linear;
-
+  &__over-lay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    padding-top: 64px;
+  }
   &__content {
     padding-top: 40%;
     background-color: rgba(239, 242, 249, 0);
@@ -45,7 +47,6 @@
   }
   &__page-headline {
     color: $white1;
-    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     font-weight: normal;
     font-size: 18px;
@@ -70,10 +71,8 @@
       border: 1px solid $darkBlue;
       border-radius: 32px;
       max-width: 180px;
-      background-color: rgba(0, 0, 0, 0.3);
       border: 1px solid $white1;
       color: $white1;
-      // color: $darkBlue;
     }
     &--book:hover {
       background-color: $white2;
