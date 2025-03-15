@@ -1,0 +1,105 @@
+@import "../../styles/partials/mixins.scss";
+@import "../../styles/partials/variables";
+.header {
+  background-color: rgba(239, 242, 249, 0.5);
+  background-color: $white1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 16px;
+
+  // SHOW NAV BUTTON
+  &__show-nav-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+    @include tablet {
+      display: none;
+    }
+    &--brand-name {
+      color: $armyBlue;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: normal;
+      position: relative;
+      z-index: 200;
+    }
+    &--open-button,
+    &--close-button {
+      height: 35px;
+      width: 35px;
+      color: $armyBlue;
+      position: relative;
+      z-index: 200;
+    }
+    &--open-button {
+      height: 33px;
+      width: 33px;
+    }
+    &--close-button {
+      display: none;
+    }
+    // JS DYNAMIC CLASS
+    .display-block {
+      display: block;
+    }
+    .display-none {
+      display: none;
+    }
+  }
+  // HEADER BUTTON CONTAINER
+  &__button-container {
+    width: fit-content;
+  }
+  //LINKS
+  &__links {
+    position: fixed;
+    bottom: 10;
+    left: 0;
+    z-index: 50;
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    background-color: $white1;
+  }
+  // JS DYNAMIC CLASS
+  .display-block {
+    display: block;
+  }
+  &__link-container {
+    &--link {
+      display: block;
+      color: $armyBlue;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: right;
+      text-decoration: none;
+      line-height: 32px;
+    }
+  }
+  // BIRTH AND LOCATION
+  &__birth-location {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    padding: 16px;
+    // background-color: rgba(239, 242, 249, 0.05);
+    &--item {
+      font-size: 12px;
+      font-weight: normal;
+      color: $white1;
+    }
+    &--item:nth-child(2) {
+      text-align: right;
+    }
+  }
+}
+// DYNAMIC JS CLASS
+.white-background {
+  background-color: $white1;
+}
