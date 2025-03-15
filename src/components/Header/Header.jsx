@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { use, useState } from "react";
+import { useState } from "react";
 import "./Header.scss";
 const Header = () => {
   const [whiteBackgroundClass, setWhiteBackgroundClass] = useState("");
@@ -52,6 +52,13 @@ const Header = () => {
             About Us
           </a>
         </div>
+      </div>
+      <div className="header__birth-location">
+        {" "}
+        <h2 className="header__birth-location--item">
+          1530 Albion Rd, Etobicoke
+        </h2>
+        <h2 className="header__birth-location--item">Since 2022</h2>
       </div>
     </section>
   );
