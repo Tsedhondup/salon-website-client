@@ -24,7 +24,21 @@ const Header = () => {
     setLinkClass("");
   };
   return (
-    <section className={`header ${whiteBackgroundClass}`}>
+    <motion.section
+      className={`header ${whiteBackgroundClass}`}
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+        transition: {
+          ease: "linear",
+          duration: 1.5,
+          delay: 3,
+        },
+      }}
+      viewport={{ once: true, amount: 1 }}
+    >
       {/*  Show navigation button */}
       <div className="header__show-nav-wrapper">
         <motion.h2
@@ -37,8 +51,8 @@ const Header = () => {
             opacity: 1,
             transition: {
               ease: "linear",
-              duration: 1,
-              delay: 1,
+              duration: 1.5,
+              delay: 3.2,
             },
           }}
           viewport={{ once: true, amount: 1 }}
@@ -55,7 +69,7 @@ const Header = () => {
             transition: {
               ease: "linear",
               duration: 1,
-              delay: 1.5,
+              delay: 3.2,
             },
           }}
           viewport={{ once: true, amount: 1 }}
@@ -99,7 +113,7 @@ const Header = () => {
             transition: {
               ease: "linear",
               duration: 1,
-              delay: 5.7,
+              delay: 3,
             },
           }}
           viewport={{ once: true, amount: 1 }}
@@ -118,7 +132,7 @@ const Header = () => {
             transition: {
               ease: "easeIn",
               duration: 1,
-              delay: 5.7,
+              delay: 3,
             },
           }}
           viewport={{ once: true, amount: 1 }}
@@ -126,7 +140,7 @@ const Header = () => {
           1530 Albion Rd, Etobicoke
         </motion.h2>
       </div>
-    </section>
+    </motion.section>
   );
 };
 export default Header;

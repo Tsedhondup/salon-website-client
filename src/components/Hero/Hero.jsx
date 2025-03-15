@@ -13,7 +13,6 @@ const Hero = () => {
         transition: {
           ease: "linear",
           duration: 1.5,
-          delay: 1.8,
         },
       }}
       viewport={{ once: true, amount: 1 }}
@@ -31,7 +30,7 @@ const Hero = () => {
             transition: {
               ease: "linear",
               duration: 1.5,
-              delay: 2,
+              delay: .5,
             },
           }}
           viewport={{ once: true, amount: 1 }}
@@ -53,8 +52,8 @@ const Hero = () => {
             transition: {
               ease: "linear",
               duration: 1.5,
-              delay: 2.2,
-              backgroundColor: { delay: 5 },
+              delay: 1,
+              backgroundColor: { delay: 2 },
             },
           }}
           viewport={{ once: true, amount: 1 }}
@@ -79,10 +78,10 @@ const Hero = () => {
               transition: {
                 ease: "linear",
                 duration: 1.5,
-                delay: 3,
-                backgroundColor: { delay: 4.5 },
-                color: { delay: 5.5, duration: 1.7 },
-                borderColor: { delay: 5.7, duration: 1.9 },
+                delay: 1.5,
+                backgroundColor: { delay: 2 },
+                color: { delay: 2.5, duration: 1.7 },
+                borderColor: { delay: 3, duration: 1.9 },
               },
             }}
             viewport={{ once: true, amount: 1 }}
