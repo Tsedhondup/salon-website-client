@@ -3,6 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap"); //
 
+// TOGGLE BACKGROUND IMAGE ANIMATION
+@keyframes slideBackground {
+  0% {
+    background-position: 0 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-position: 0% 0;
+  }
+}
 .hero {
   padding: 16px;
   padding-top: 64px;
@@ -10,10 +22,8 @@
   background-color: $champagne;
   display: flex;
   align-items: normal;
-  background-image: url("../../assets/images/hero-2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("../../assets/images/hero-2b.jpg");
+  animation: slideBackground 30s infinite linear;
 
   &__content {
     padding-top: 40%;
@@ -48,7 +58,6 @@
     gap: 5px;
 
     &--button {
-      color: $darkBlue;
       font-size: 16px;
       font-weight: 800;
       text-transform: uppercase;
@@ -56,16 +65,10 @@
       border: 1px solid $darkBlue;
       border-radius: 32px;
       max-width: 180px;
-      background-color: $white1;
       background-color: rgba(0, 0, 0, 0.3);
       border: 1px solid $white1;
       color: $white1;
       // color: $darkBlue;
     }
-    // &--button:nth-child(2) {
-    //   background-color: $white1;
-    //   border: 1px solid $white1;
-    //   color: $darkBlue;
-    // }
   }
 }
