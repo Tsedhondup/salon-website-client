@@ -6,33 +6,141 @@ const AboutUsHome = () => {
     <section className="about-us-home">
       <div className="about-us-home__content">
         <div className="about-us-home__text-container">
-          <h2 className="about-us-home__text-container--header">Our Story</h2>
-          <p className="about-us-home__text-container--body">
+          <motion.h2
+            className="about-us-home__text-container--header"
+            initial={{
+              opacity: 0,
+              y: 60,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                ease: "linear",
+                duration: 1,
+              },
+            }}
+            viewport={{ once: true, amount: 1 }}
+          >
+            Our Story
+          </motion.h2>
+          <motion.p
+            className="about-us-home__text-container--body"
+            initial={{
+              opacity: 0,
+              y: 60,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                ease: "linear",
+                duration: 1,
+              },
+            }}
+            viewport={{ once: true, amount: 1 }}
+          >
             At Nano's Beauty Salon, we believe in enhancing beauty and
             well-being. Founded in 2023, our salon is dedicated to providing
             exceptional services in a welcoming environment, ensuring every
             visit is a delightful experience.
-          </p>
+          </motion.p>
         </div>
         <div className="about-us-home__text-container">
-          <h3 className="about-us-home__text-container--header">100%</h3>
-          <p className="about-us-home__text-container--body">
+          <motion.h3
+            className="about-us-home__text-container--header"
+            initial={{
+              opacity: 0,
+              y: 60,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                ease: "linear",
+                duration: 1,
+              },
+            }}
+            viewport={{ once: true, amount: 1 }}
+          >
+            100%
+          </motion.h3>
+          <motion.p
+            className="about-us-home__text-container--body"
+            initial={{
+              opacity: 0,
+              y: 60,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                ease: "linear",
+                duration: 1,
+              },
+            }}
+            viewport={{ once: true, amount: 1 }}
+          >
             Our commitment to customer satisfaction drives us to deliver
             personalized care and high-quality treatments.
-          </p>
+          </motion.p>
         </div>
         <div className="about-us-home__text-container">
-          <h3 className="about-us-home__text-container--header">3 years</h3>
-          <p className="about-us-home__text-container--body">
+          <motion.h3
+            className="about-us-home__text-container--header"
+            initial={{
+              opacity: 0,
+              y: 60,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                ease: "linear",
+                duration: 1,
+              },
+            }}
+            viewport={{ once: true, amount: 1 }}
+          >
+            3 years
+          </motion.h3>
+          <motion.p
+            className="about-us-home__text-container--body"
+            initial={{
+              opacity: 0,
+              y: 60,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                ease: "linear",
+                duration: 1,
+              },
+            }}
+            viewport={{ once: true, amount: 1 }}
+          >
             Our team of skilled professionals is passionate about beauty and
             wellness, ensuring you receive the best care.
-          </p>
+          </motion.p>
         </div>
       </div>
       <div className="about-us-home__book-button-container">
         <motion.a
           className="about-us-home__book-button-container--button"
           href="tel:+4167440019"
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              ease: "linear",
+              delay: 1,
+              duration: 1,
+            },
+          }}
+          viewport={{ once: true, amount: 1 }}
         >
           Book now
         </motion.a>
