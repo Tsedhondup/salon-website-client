@@ -87,6 +87,8 @@
     &--item {
       font-size: 12px;
       font-weight: normal;
+      text-decoration: none;
+      width: fit-content;
       color: $white1;
     }
     &--item:nth-child(2) {

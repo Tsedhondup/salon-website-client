@@ -87,10 +87,11 @@ const Header = () => {
         </div>
       </div>
       <div className="header__birth-location">
+        {" "}
+        <h2 className="header__birth-location--item">Since 2022</h2>
         <h2 className="header__birth-location--item">
           1530 Albion Rd, Etobicoke
         </h2>
-        <h2 className="header__birth-location--item">Since 2022</h2>
       </div>
     </section>
   );
