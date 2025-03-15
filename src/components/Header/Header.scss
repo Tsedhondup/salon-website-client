@@ -18,7 +18,7 @@
       display: none;
     }
     &--brand-name {
-      color: $armyBlue;
+      color: $darkBlue;
       // color: $blackMain;
       text-transform: uppercase;
       font-size: 20px;
@@ -30,7 +30,7 @@
     &--close-button {
       height: 35px;
       width: 35px;
-      color: $armyBlue;
+      color: $darkBlue;
       position: relative;
       z-index: 200;
     }
@@ -67,7 +67,7 @@
   &__link-container {
     &--link {
       display: block;
-      color: $armyBlue;
+      color: $darkBlue;
       font-size: 14px;
       font-weight: bold;
       text-align: right;
