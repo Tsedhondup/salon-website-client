@@ -2,7 +2,7 @@
 @import "../../styles/partials/variables";
 .header {
   background-color: rgba(239, 242, 249, 0.5);
-  background-color: $white2;
+  background-color: $white1;
   position: fixed;
   top: 0;
   right: 0;
@@ -54,8 +54,15 @@
   }
   //LINKS
   &__links {
-    display: none;
-    margin-top: 32px;
+    position: fixed;
+    bottom: 10;
+    left: 0;
+    z-index: 50;
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    background-color: $white1;
   }
   // JS DYNAMIC CLASS
   .display-block {

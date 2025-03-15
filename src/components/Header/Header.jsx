@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import "./Header.scss";
 const Header = () => {
@@ -86,7 +87,6 @@ const Header = () => {
         </div>
       </div>
       <div className="header__birth-location">
-        {" "}
         <h2 className="header__birth-location--item">
           1530 Albion Rd, Etobicoke
         </h2>
