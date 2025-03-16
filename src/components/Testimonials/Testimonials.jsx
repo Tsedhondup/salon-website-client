@@ -68,12 +68,14 @@ const Testimonials = () => {
           className="testimonial__image-container--image"
           initial={{
             opacity: 0,
+            y: 60,
           }}
           whileInView={{
             opacity: 1,
+            y: 0,
             transition: {
               ease: "linear",
-              duration: 1,
+              duration: 0.5,
             },
           }}
           viewport={{ once: true, amount: 1 }}
@@ -83,14 +85,13 @@ const Testimonials = () => {
         className="testimonial__client-name"
         initial={{
           opacity: 0,
-          y: 60,
         }}
         whileInView={{
           opacity: 1,
-          y: 0,
           transition: {
             ease: "linear",
-            duration: 0.5,
+            delay: 0.5,
+            duration: 1,
           },
         }}
         viewport={{ once: true, amount: 1 }}
