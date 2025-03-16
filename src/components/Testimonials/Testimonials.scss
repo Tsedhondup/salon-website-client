@@ -1,0 +1,49 @@
+@import "../../styles/partials/mixins.scss";
+@import "../../styles/partials/variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+.testimonial {
+  padding: 16px;
+  &__rate-container {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    &--rating {
+      width: fit-content;
+    }
+    &--rating-star {
+      color: $darkBlue;
+    }
+  }
+
+  &__statement {
+    color: $darkBlue;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    margin: 16px auto;
+    width: 300px;
+  }
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    &--image {
+      object-fit: cover;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+    }
+  }
+  &__client-name {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: $darkBlue;
+    text-align: center;
+    padding-top: 16px;
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../styles/partials/mixins.scss";
+@import "../../styles/partials/variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap"); //
+
+.contacts {
+  //   padding: 16px;
+  &__booking-info {
+    font-family: "Roboto", sans-serif;
+    // font-weight: bold;
+    font-size: 18px;
+    color: $darkBlue;
+    line-height: 24px;
+    text-align: center;
+
+    padding: 16px;
+    margin-bottom: 16px;
+    &--phone-number {
+      display: block;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+}

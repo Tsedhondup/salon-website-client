@@ -6,6 +6,7 @@ import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 import AboutUsHome from "../../components/AboutUsHome/AboutUsHome";
 import HomePageServiceLists from "../../components/HomePageServiceLists/HomePageServiceLists";
+import Testimonials from "../../components/Testimonials/Testimonials";
 const HomePage = () => {
   return (
     <section>
@@ -14,6 +15,7 @@ const HomePage = () => {
       <AboutUsHome />
       <HomePageServices />
       <HomePageServiceLists />
+      <Testimonials />
       {/* <Gallery /> */}
       <Contact />
       <Footer />
