@@ -17,6 +17,7 @@ const Gallery = () => {
         {images.map((item) => {
           const imageEl = (
             <motion.img
+              key={item}
               className="gallery__image-container--image"
               src={item}
               initial={{
