@@ -4,7 +4,7 @@ const Contact = () => {
     <section className="contacts">
       <p className="contacts__booking-info">
         For reservation and any other inquiries, Please call us directly at
-        <a className="contacts__booking-info--phone-number">+416-744-0019</a>
+        <a className="contacts__booking-info--phone-number">+1 416-744-0019</a>
       </p>
       <div>
         <h2>Get in touch </h2>
