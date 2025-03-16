@@ -1,4 +1,5 @@
 import "./Gallery.scss";
+import BookButton from "../BookButton/BookButton";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import image1 from "../../assets/images/g1.jpeg";
@@ -37,6 +38,7 @@ const Gallery = () => {
           return imageEl;
         })}
       </div>
+      <BookButton />
     </section>
   );
 };
