@@ -102,7 +102,7 @@ const AboutUsHome = () => {
             }}
             viewport={{ once: true, amount: 1 }}
           >
-            3 years
+            20+ years
           </motion.h3>
           <motion.p
             className="about-us-home__text-container--body"
@@ -120,8 +120,9 @@ const AboutUsHome = () => {
             }}
             viewport={{ once: true, amount: 1 }}
           >
-            Our team of skilled professionals is passionate about beauty and
-            wellness, ensuring you receive the best care.
+            The staff at Nano’s Beauty Salon, with over 20 years of combined
+            experience, is passionate about beauty and wellness, ensuring
+            exceptional care.
           </motion.p>
         </div>
       </div>
