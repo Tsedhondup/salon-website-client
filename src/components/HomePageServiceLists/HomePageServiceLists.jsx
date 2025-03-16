@@ -1,62 +1,239 @@
+// eslint-disable-next-line no-unused-vars
+import { delay, motion } from "framer-motion";
 import "./HomePageServiceLists.scss";
 const HomePageServiceLists = () => {
   return (
     <section className="homepage-service-lists">
-      <h3 className="homepage-service-lists__header">
+      <motion.h3
+        className="homepage-service-lists__header"
+        initial={{
+          opacity: 0,
+          y: 60,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            ease: "linear",
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true, amount: 1 }}
+      >
         Explore our beauty services designed to enhance your natural beauty and
         confidence
-      </h3>
-      <div className="homepage-service-lists__list-container">
-        <div className="homepage-service-lists__list">
+      </motion.h3>
+      <motion.div
+        className="homepage-service-lists__list-container"
+        initial={{
+          opacity: 0,
+          y: 60,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            ease: "linear",
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true, amount: 1 }}
+      >
+        <motion.div
+          className="homepage-service-lists__list"
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              ease: "linear",
+              duration: 0.5,
+              delay: 1,
+            },
+          }}
+          viewport={{ once: true, amount: 1 }}
+        >
           <h2 className="homepage-service-lists__list--header">Waxing</h2>
           <p className="homepage-service-lists__list--body">
             Smooth, precise waxing awaits
           </p>
-        </div>
-      </div>
-      <div className="homepage-service-lists__list-container">
-        <div className="homepage-service-lists__list">
+        </motion.div>
+      </motion.div>
+      <motion.div
+        className="homepage-service-lists__list-container"
+        initial={{
+          opacity: 0,
+          y: 60,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            ease: "linear",
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true, amount: 1 }}
+      >
+        <motion.div
+          className="homepage-service-lists__list"
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              ease: "linear",
+              duration: 0.5,
+              delay: 1,
+            },
+          }}
+          viewport={{ once: true, amount: 1 }}
+        >
           <h2 className="homepage-service-lists__list--header">Hair</h2>
           <p className="homepage-service-lists__list--body">
             Sharp, stylish cuts delivered
           </p>
-        </div>
-      </div>
-      <div className="homepage-service-lists__list-container">
-        <div className="homepage-service-lists__list">
+        </motion.div>
+      </motion.div>
+      <motion.div
+        className="homepage-service-lists__list-container"
+        initial={{
+          opacity: 0,
+          y: 60,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            ease: "linear",
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true, amount: 1 }}
+      >
+        <motion.div
+          className="homepage-service-lists__list"
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              ease: "linear",
+              duration: 0.5,
+              delay: 1,
+            },
+          }}
+          viewport={{ once: true, amount: 1 }}
+        >
           <h2 className="homepage-service-lists__list--header">
             Lash Extension
           </h2>
           <p className="homepage-service-lists__list--body">
             Bold, flawless lashes crafted
           </p>
-        </div>
-      </div>
-      <div className="homepage-service-lists__list-container">
-        <div className="homepage-service-lists__list">
+        </motion.div>
+      </motion.div>
+      <motion.div
+        className="homepage-service-lists__list-container"
+        initial={{
+          opacity: 0,
+          y: 60,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            ease: "linear",
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true, amount: 1 }}
+      >
+        <motion.div
+          className="homepage-service-lists__list"
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              ease: "linear",
+              duration: 0.5,
+              delay: 1,
+            },
+          }}
+          viewport={{ once: true, amount: 1 }}
+        >
           <h2 className="homepage-service-lists__list--header">Hair Color</h2>
           <p className="homepage-service-lists__list--body">
             Vibrant, expert color achieved.
           </p>
-        </div>
-      </div>
-      <div className="homepage-service-lists__list-container">
-        <div className="homepage-service-lists__list">
+        </motion.div>
+      </motion.div>
+      <motion.div
+        className="homepage-service-lists__list-container"
+        initial={{
+          opacity: 0,
+          y: 60,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            ease: "linear",
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true, amount: 1 }}
+      >
+        <motion.div
+          className="homepage-service-lists__list"
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              ease: "linear",
+              duration: 0.5,
+              delay: 1,
+            },
+          }}
+          viewport={{ once: true, amount: 1 }}
+        >
           <h2 className="homepage-service-lists__list--header">Beard</h2>
           <p className="homepage-service-lists__list--body">
             Clean, sculpted beards shaped
           </p>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      <div className="homepage-service-lists__button-container">
-        <a
+      <motion.div className="homepage-service-lists__button-container">
+        <motion.a
           className="homepage-service-lists__button-container--button"
           href="#"
+          initial={{
+            borderColor: "#ffffff",
+            color: "#ffffff",
+          }}
+          whileInView={{
+            borderColor: "#21272e",
+            color: "#21272e",
+            transition: {
+              ease: "linear",
+              duration: 0.5,
+              delay: 1,
+              borderColor: { delay: 1.5 },
+            },
+          }}
+          viewport={{ once: true, amount: 1 }}
         >
           More services
-        </a>
-      </div>
+        </motion.a>
+      </motion.div>
     </section>
   );
 };
