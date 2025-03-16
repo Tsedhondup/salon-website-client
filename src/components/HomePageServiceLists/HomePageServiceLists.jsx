@@ -54,7 +54,7 @@ const HomePageServiceLists = () => {
           className="homepage-service-lists__button-container--button"
           href="#"
         >
-          See more
+          More services
         </a>
       </div>
     </section>
