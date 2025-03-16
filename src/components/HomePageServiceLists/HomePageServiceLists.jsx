@@ -217,11 +217,11 @@ const HomePageServiceLists = () => {
           href="#"
           initial={{
             borderColor: "#ffffff",
-            color: "#ffffff",
+            opacity: 0,
           }}
           whileInView={{
             borderColor: "#21272e",
-            color: "#21272e",
+            opacity: 1,
             transition: {
               ease: "linear",
               duration: 0.5,

@@ -60,7 +60,7 @@
     display: flex;
     justify-content: center;
     margin-top: 32px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     &--button {
       display: block;
       font-size: 16px;
@@ -74,10 +74,10 @@
       border: 1px solid $darkBlue;
       color: $darkBlue;
     }
-    &__button:hover {
-      background-color: $white2;
+    &--button:hover {
+      background-color: $darkBlue;
       border-color: $darkBlue;
-      color: $darkBlue;
+      color: $white1;
     }
   }
 }

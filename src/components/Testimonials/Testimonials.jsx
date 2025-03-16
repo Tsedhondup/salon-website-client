@@ -1,4 +1,5 @@
 import "./Testimonials.scss";
+import BookButton from "../BookButton/BookButton";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -98,6 +99,7 @@ const Testimonials = () => {
       >
         Emily R.
       </motion.h3>
+      <BookButton />
     </section>
   );
 };
