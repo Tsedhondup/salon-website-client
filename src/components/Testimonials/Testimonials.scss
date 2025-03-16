@@ -2,3 +2,19 @@
 @import "../../styles/partials/variables";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+.testimonial {
+  background-color: $darkBlue;
+  padding: 16px;
+  &__rate-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    &--rating {
+      width: fit-content;
+    }
+    &--rating-star {
+      color: $white1;
+    }
+  }
+}
