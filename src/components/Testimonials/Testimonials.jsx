@@ -42,17 +42,61 @@ const Testimonials = () => {
         })}
       </div>
 
-      <p className="testimonial__statement">
+      <motion.p
+        className="testimonial__statement"
+        initial={{
+          opacity: 0,
+          y: 60,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            ease: "linear",
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true, amount: 1 }}
+      >
         Had my hair colored at Nano’s Beauty Salon, love it! Vibrant, expert
         color achieved perfectly. Definitely returning!
-      </p>
+      </motion.p>
       <div className="testimonial__image-container">
-        <img
+        <motion.img
           src={nanoClientImage}
           alt="client-image"
           className="testimonial__image-container--image"
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              ease: "linear",
+              duration: 1,
+            },
+          }}
+          viewport={{ once: true, amount: 1 }}
         />
       </div>
+      <motion.h3
+        className="testimonial__client-name"
+        initial={{
+          opacity: 0,
+          y: 60,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            ease: "linear",
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true, amount: 1 }}
+      >
+        Emily R.
+      </motion.h3>
     </section>
   );
 };
