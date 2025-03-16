@@ -6,10 +6,10 @@
 .service-home-page {
   padding: 16px;
   margin-top: 16px;
-  margin-bottom: 170px;
 }
 
 .image-text-container {
+  margin-bottom: 200px;
   position: relative;
   &__image {
     display: block;
@@ -22,7 +22,7 @@
     left: 50%; /* Center horizontally */
     transform: translateX(-50%);
     top: 88%;
-    z-index: 100;
+    z-index: 80;
     background-color: $darkBlue;
     color: $white2;
     text-align: center;
