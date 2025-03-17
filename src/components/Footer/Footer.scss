@@ -22,6 +22,10 @@
       line-height: 22px;
       margin-bottom: 32px;
     }
+    &--location {
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
     &--address {
       display: block;
       font-size: 15px;
@@ -30,13 +34,32 @@
       font-family: "Roboto", sans-serif;
       text-decoration: none;
       color: $darkBlue;
-      margin-bottom: 32px;
       width: 240px;
+    }
+    &--phone-number {
+      display: block;
+      color: $darkBlue;
+      margin-top: 5px;
+      margin-bottom: 64px;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: "Roboto", sans-serif;
     }
   }
   &__social-header {
     font-size: 13px;
     margin-bottom: 16px;
+  }
+
+  &__navigations {
+    text-align: center;
+    margin-top: 32px;
+    &__links {
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      padding-bottom: 16px;
+    }
   }
   &__social-container {
     display: flex;
@@ -44,6 +67,7 @@
     align-items: center;
     gap: 10px;
     padding-bottom: 32px;
+    margin-top: 32px;
     margin-bottom: 32px;
     border-bottom: 1px solid $darkBlue;
     &--link {
@@ -65,20 +89,14 @@
       height: 15px;
     }
   }
-  &__navigations {
-    margin-bottom: 32px;
-    &__links {
-      display: block;
-      padding-bottom: 10px;
-      font-size: 14px;
-      font-weight: bold;
-    }
-  }
   &__copy-right-container {
+    margin-bottom: 16px;
+
     &--info {
-      font-family: "Roboto", sans-serif;
+      //   font-family: "Roboto", sans-serif;
       text-align: center;
-      font-size: 14px;
+      font-size: 13px;
+      font-weight: bold;
     }
   }
 }
