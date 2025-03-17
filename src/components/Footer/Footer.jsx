@@ -1,9 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTiktok,
-  faInstagram,
-  faGoogle,
-} from "@fortawesome/free-brands-svg-icons";
+import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import BookButton from "../BookButton/BookButton";
 import "./Footer.scss";
 const Footer = () => {
   //   <FontAwesomeIcon
@@ -24,6 +21,12 @@ const Footer = () => {
         >
           The Albion Mall, 1530 Albion Rd, Etobicoke, ON M9V 1B4
         </a>
+
+        <div className="footer__navigations">
+          <a className="footer__navigations__links">Services</a>
+          <a className="footer__navigations__links">About Us</a>
+          <a className="footer__navigations__links">book now</a>
+        </div>
         <div className="footer__social-container">
           <a
             className="footer__social-container--link"
@@ -46,15 +49,10 @@ const Footer = () => {
             />
           </a>
         </div>
-        <div>
-          <div>
-            <a>Services</a>
-            <a>Appoinment</a>
-            <a>book now</a>
-          </div>
-          <div>
-            <p>Copyright © 2025 Nano's Beauty Salon. All rights reserved.</p>
-          </div>
+        <div className="footer__copy-right-container">
+          <p className="footer__copy-right-container--info">
+            Copyright © 2025 Nano's Beauty Salon. All rights reserved.
+          </p>
         </div>
       </div>
     </section>

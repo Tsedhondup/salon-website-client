@@ -11,16 +11,14 @@
       color: $armyBlue;
       font-size: 20px;
       font-weight: 900;
-      padding-bottom: 4px;
+      padding-bottom: 16px;
       margin-bottom: 16px;
       border-bottom: 1px solid $armyBlue;
-      width: fit-content;
+      //   width: fit-content;
     }
     &--title {
-      font-family: "Roboto", sans-serif;
-      color: $armyBlue;
-      font-size: 16px;
-      font-weight: normal;
+      font-size: 14px;
+      font-weight: bold;
       line-height: 22px;
       margin-bottom: 32px;
     }
@@ -28,19 +26,26 @@
       display: block;
       font-size: 15px;
       line-height: 22px;
-      font-weight: normal;
+      font-weight: bold;
       font-family: "Roboto", sans-serif;
       text-decoration: none;
       color: $darkBlue;
-      margin-bottom: 16px;
+      margin-bottom: 32px;
       width: 240px;
     }
   }
+  &__social-header {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
   &__social-container {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
+    padding-bottom: 32px;
     margin-bottom: 32px;
+    border-bottom: 1px solid $darkBlue;
     &--link {
       display: flex;
       align-items: center;
@@ -58,6 +63,22 @@
     &--icon-tiktok {
       color: $darkBlue;
       height: 15px;
+    }
+  }
+  &__navigations {
+    margin-bottom: 32px;
+    &__links {
+      display: block;
+      padding-bottom: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  &__copy-right-container {
+    &--info {
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      font-size: 14px;
     }
   }
 }
