@@ -7,9 +7,11 @@ const Contact = () => {
       className="contacts"
       initial={{
         opacity: 0,
+        y: 60,
       }}
       whileInView={{
         opacity: 1,
+        y: 0,
         transition: {
           ease: "linear",
           duration: 0.5,

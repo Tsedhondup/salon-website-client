@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
