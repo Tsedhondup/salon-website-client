@@ -4,12 +4,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap"); //
 
 .contacts {
-  //   padding: 16px;
+  background-image: url("../../assets/images/nano-salon.jpg");
+  background-size: cover;
+  margin-top: 16px;
+  &__content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 16px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__header {
+    font-size: 16px;
+    text-align: center;
+    color: $white1;
+    border-bottom: 1px solid $white1;
+    padding-bottom: 4px;
+  }
   &__booking-info {
-    font-family: "Roboto", sans-serif;
-    // font-weight: bold;
-    font-size: 18px;
-    color: $darkBlue;
+    font-weight: bold;
+    font-size: 14px;
+    color: $white1;
     line-height: 24px;
     text-align: center;
 
@@ -18,6 +34,12 @@
     &--phone-number {
       display: block;
       font-family: "Roboto", sans-serif;
+      color: $darkBlue;
+      background-color: $white1;
+      width: fit-content;
+      padding: 5px 10px;
+      margin: auto;
+      margin-top: 16px;
     }
   }
 }

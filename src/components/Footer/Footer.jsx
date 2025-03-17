@@ -1,6 +1,7 @@
+import "./Footer.scss";
 const Footer = () => {
   return (
-    <section>
+    <section className="footer">
       <div>
         <h1>Nano's Beauty Salon</h1>
         <h2>The Albion Mall, 1530 Albion Rd, Etobicoke, ON M9V 1B4</h2>
