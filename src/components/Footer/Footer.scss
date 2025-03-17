@@ -4,7 +4,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap"); //
 
 .footer {
-//   background-color: $darkBlue;
-//   color: $white1;
   padding: 16px;
+  margin-top: 16px;
+  &__salon-info {
+    &--name {
+      color: $armyBlue;
+      font-size: 20px;
+      font-weight: 900;
+      padding-bottom: 4px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid $armyBlue;
+      width: fit-content;
+    }
+    &--title {
+      font-family: "Roboto", sans-serif;
+      color: $armyBlue;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 22px;
+      margin-bottom: 32px;
+    }
+    &--address {
+      display: block;
+      font-size: 15px;
+      line-height: 22px;
+      font-weight: normal;
+      font-family: "Roboto", sans-serif;
+      text-decoration: none;
+      color: $darkBlue;
+      margin-bottom: 16px;
+      width: 240px;
+    }
+  }
+  &__social-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 32px;
+    &--link {
+      display: flex;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+    }
+    &--icon-insta,
+    &--icon-tiktok {
+      width: 100%;
+      height: 100%;
+    }
+    &--icon-insta {
+      color: $intagram;
+    }
+    &--icon-tiktok {
+      color: $darkBlue;
+      height: 15px;
+    }
+  }
 }
