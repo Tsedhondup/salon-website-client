@@ -10,9 +10,28 @@ import image4 from "../../assets/images/client1.jpeg";
 const Gallery = () => {
   const images = [image1, image2, image3, image4];
   let animationDuration = 0.3;
+  const initialView = {
+    opacity: 0,
+    y: 60,
+  };
+  const whileInView = {
+    opacity: 1,
+    y: 0,
+    transition: {
+      ease: "linear",
+      duration: 0.5,
+    },
+  };
   return (
     <section className="gallery">
-      <h2 className="gallery__header">Nano's Gallery</h2>
+      <motion.h2
+        className="gallery__header"
+        initial={initialView}
+        whileInView={whileInView}
+        viewport={{ once: true, amount: 1 }}
+      >
+        Nano's Gallery
+      </motion.h2>
       <div className="gallery__image-container">
         {images.map((item) => {
           const imageEl = (
