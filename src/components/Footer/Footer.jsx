@@ -1,5 +1,10 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Footer.scss";
 const Footer = () => {
+  //   <FontAwesomeIcon
+  //   icon={item}
+  //   className="testimonial__rate-container--rating-star"
+  // />
   return (
     <section className="footer">
       <div>
