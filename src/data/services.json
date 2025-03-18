@@ -1,0 +1,272 @@
+[
+    {
+        "category": "Hair",
+        "services": [
+            {
+                "name": "Classic",
+                "price": "$110",
+                "duration": "2.5 hrs"
+            },
+            {
+                "name": "Classic fill",
+                "price": "$60",
+                "duration": "1 hr"
+            },
+            {
+                "name": "Men haircut",
+                "price": "$25",
+                "duration": "30 mins"
+            },
+            {
+                "name": "Men fade",
+                "price": "$30",
+                "duration": "30 mins"
+            },
+            {
+                "name": "Womens hair cut",
+                "price": "$35",
+                "duration": "30 mins"
+            },
+            {
+                "name": "Womens haircut & style",
+                "price": "$60",
+                "duration": "1 hr"
+            },
+            {
+                "name": "Wash and blow dry",
+                "price": "$35+",
+                "duration": "30+ mins"
+            },
+            {
+                "name": "Roots color",
+                "price": "$60+",
+                "duration": "1.5 hr"
+            },
+            {
+                "name": "Roots with cut & style",
+                "price": "$90 and up",
+                "duration": "2 hr"
+            },
+            {
+                "name": "Extra color",
+                "price": "$30",
+                "duration": null
+            },
+            {
+                "name": "Partial hi-lights",
+                "price": "$100 and up",
+                "duration": "3 hrs"
+            },
+            {
+                "name": "Full hi light",
+                "price": "$140+",
+                "duration": "3 hrs"
+            },
+            {
+                "name": "Baby lights",
+                "price": "$200+",
+                "duration": "3.5 hrs"
+            },
+            {
+                "name": "Balayage",
+                "price": "$200+",
+                "duration": "3.5 hrs"
+            },
+            {
+                "name": "Ombre",
+                "price": "$160+",
+                "duration": "3 hrs"
+            },
+            {
+                "name": "Fashion color per foil",
+                "price": "$20",
+                "duration": null
+            },
+            {
+                "name": "Perm",
+                "price": "$85+",
+                "duration": "2 hr"
+            },
+            {
+                "name": "Hair treatment",
+                "price": "$40",
+                "duration": "45 mins"
+            },
+            {
+                "name": "Roots bleach",
+                "price": "$100+",
+                "duration": "2 hr"
+            },
+            {
+                "name": "Keratin",
+                "price": "$350 and up",
+                "duration": "3.5 hrs"
+            },
+            {
+                "name": "Permanent straightening",
+                "price": "$400+",
+                "duration": "4 hrs"
+            },
+            {
+                "name": "Hair botox",
+                "price": "$350+",
+                "duration": "3.5 hrs"
+            },
+            {
+                "name": "Toner",
+                "price": "$30+",
+                "duration": "30 mins"
+            }
+        ]
+    },
+    {
+        "category": "Lash",
+        "services": [
+            {
+                "name": "Lash removal",
+                "price": "$30",
+                "duration": "20 mins"
+            },
+            {
+                "name": "Lash lift & Tint",
+                "price": "$80",
+                "duration": "1 hr"
+            },
+            {
+                "name": "Lash lift and brow lamination",
+                "price": "$150",
+                "duration": "2 hrs"
+            }
+        ]
+    },
+    {
+        "category": "Brow",
+        "services": [
+            {
+                "name": "Brow lamination",
+                "price": "$80",
+                "duration": "1 hr"
+            },
+            {
+                "name": "Brow lamination and wax",
+                "price": "$90",
+                "duration": "1 hr"
+            },
+            {
+                "name": "Brow lamination and Tint",
+                "price": "$90",
+                "duration": "1 hr"
+            },
+            {
+                "name": "Brow lamination, Tint and wax",
+                "price": "$100",
+                "duration": "1 hr"
+            },
+            {
+                "name": "Brow Tint",
+                "price": "$15",
+                "duration": "15 mins"
+            },
+            {
+                "name": "Brow Tint and wax",
+                "price": "$25",
+                "duration": "20 mins"
+            },
+            {
+                "name": "Eyebrows",
+                "price": "$10",
+                "duration": "10 mins"
+            }
+        ]
+    },
+    {
+        "category": "Beard",
+        "services": [
+            {
+                "name": "Beard line up with machine",
+                "price": "$20",
+                "duration": "15 mins"
+            },
+            {
+                "name": "Beard line up razor",
+                "price": "$25",
+                "duration": "20 mins"
+            }
+        ]
+    },
+    {
+        "category": "Waxing",
+        "services": [
+            {
+                "name": "Upper lips",
+                "price": "$6",
+                "duration": "5 mins"
+            },
+            {
+                "name": "Full face",
+                "price": "$25",
+                "duration": "30 mins"
+            },
+            {
+                "name": "Half arms",
+                "price": "$25",
+                "duration": "30 mins"
+            },
+            {
+                "name": "Full arms",
+                "price": "$35",
+                "duration": "45 mins"
+            },
+            {
+                "name": "Under arms",
+                "price": "$20",
+                "duration": "10 mins"
+            },
+            {
+                "name": "Half legs",
+                "price": "$40",
+                "duration": "30 mins"
+            },
+            {
+                "name": "Full legs",
+                "price": "$60",
+                "duration": "45 mins"
+            },
+            {
+                "name": "Brazilian",
+                "price": "$50",
+                "duration": "30 mins"
+            },
+            {
+                "name": "Stomach",
+                "price": "$30",
+                "duration": "30 mins"
+            },
+            {
+                "name": "Back",
+                "price": "$50",
+                "duration": "30 mins"
+            },
+            {
+                "name": "Full body",
+                "price": "$160",
+                "duration": "1.5 hrs"
+            }
+        ]
+    },
+    {
+        "category": "Facial",
+        "services": [
+            {
+                "name": "Basic facial",
+                "price": "$65",
+                "duration": "1 hr"
+            },
+            {
+                "name": "Facial with extractions",
+                "price": "$75",
+                "duration": "1.5 hrs"
+            }
+        ]
+    }
+]
