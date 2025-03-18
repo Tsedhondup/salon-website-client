@@ -24,11 +24,14 @@ const MainServices = () => {
         {serviceData.map((item) => {
           const serviecEl = (
             <div className="main-services__list-item">
-              <img
-                src={images[indexNumber]}
-                alt={item.category}
-                className="main-services__list-item--image"
-              />
+              <div className={`main-services__${item.category}-container`}>
+                <img
+                  src={images[indexNumber]}
+                  alt={item.category}
+                  className="main-services__list-item--image"
+                />
+              </div>
+
               <div
                 key={item.category}
                 className="main-services__list-item--texts"
@@ -44,13 +47,13 @@ const MainServices = () => {
                         key={item2.name}
                         className="main-services__service-detail-content"
                       >
-                        <h3 className="main-service__service-detail-content--name">
+                        <h3 className="main-services__service-detail-content--name">
                           {item2.name}
                         </h3>
-                        <h3 className="main-service__service-detail-content--price">
+                        <h3 className="main-services__service-detail-content--price">
                           {item2.price}
                         </h3>
-                        <h3 className="main-service__service-detail-content--duration">
+                        <h3 className="main-services__service-detail-content--duration">
                           {item2.duration}
                         </h3>
                       </div>

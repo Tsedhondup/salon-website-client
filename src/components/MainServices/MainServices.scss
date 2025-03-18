@@ -11,4 +11,67 @@
     line-height: 22px;
     margin-bottom: 32px;
   }
+
+  // images container
+  &__Hair-container,
+  &__Brow-container,
+  &__Waxing-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__Lash-container,
+  &__Beard-container,
+  &__Facial-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__list-item {
+    position: relative;
+    height: fit-content;
+    margin-bottom: 200px;
+    &--image {
+      object-fit: cover;
+      height: 270px;
+      width: 270px;
+    }
+    &--texts {
+      position: absolute;
+      top: 80%;
+      left: 20%;
+      background-color: $white1;
+      width: 300px;
+      padding: 16px;
+    }
+    &--category {
+      font-size: 14px;
+      padding-bottom: 16px;
+    }
+  }
+  &__list-item:nth-child(1) {
+    margin-bottom: 516px;
+  }
+
+  // Service details
+  //   &__service-detail-container{
+
+  //   }
+  &__service-detail-content {
+    display: flex;
+    margin-bottom: 5px;
+
+    &--name {
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+    }
+    &--price {
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+    }
+    &--duration {
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+    }
+  }
 }
