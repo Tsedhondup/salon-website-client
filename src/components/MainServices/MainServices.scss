@@ -26,21 +26,33 @@
   &__Brow-container,
   &__Waxing-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    background-color: red;
+    width: fit-content;
   }
   &__Lash-container,
   &__Beard-container,
   &__Facial-container {
     display: flex;
     justify-content: flex-end;
+    // justify-content: center;
   }
   &__list-item {
     position: relative;
-    height: fit-content;
     &--image {
+      display: block;
       object-fit: cover;
       height: 270px;
       width: 270px;
+      position: relative;
+      //   right: -50%;
+    }
+    // Custom CSS Animation for those image that are unsuccesfful with framer motion
+
+    &--Hair-image,
+    &--Brow-image,
+    &--Waxing-image {
+      position: relative;
     }
     &--texts {
       background-color: #000000;
