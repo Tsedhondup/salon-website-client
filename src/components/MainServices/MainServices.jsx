@@ -16,8 +16,11 @@ const MainServices = () => {
   return (
     <section className="main-services">
       <h1 className="main-services__header">
-        Discover a wide range of services at Nano Beauty Salon, tailored to
-        elevate your beauty experience
+        Discover a wide range of services at{" "}
+        <span className="main-services__header--salon-name">
+          Nano Beauty Salon
+        </span>
+        , tailored to elevate your beauty experience
       </h1>
 
       <div className="main-services__lists">
@@ -34,7 +37,7 @@ const MainServices = () => {
 
               <div
                 key={item.category}
-                className="main-services__list-item--texts"
+                className={`main-services__list-item--texts main-services__list-item--${item.category}-texts`}
               >
                 <h2 className="main-services__list-item--category">
                   {item.category}

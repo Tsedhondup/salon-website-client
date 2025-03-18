@@ -4,12 +4,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap"); //
 
 .main-services {
-  padding: 16px;
+  //   padding: 16px;
   padding-top: 30%;
+  background-color: #000000;
   &__header {
-    font-size: 16px;
-    line-height: 22px;
+    color: $white2;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    line-height: 28px;
+    padding: 16px;
     margin-bottom: 32px;
+    &--salon-name {
+      font-size: 20px;
+      font-weight: bold;
+    }
   }
 
   // images container
@@ -28,27 +37,58 @@
   &__list-item {
     position: relative;
     height: fit-content;
-    margin-bottom: 200px;
     &--image {
       object-fit: cover;
       height: 270px;
       width: 270px;
     }
     &--texts {
+      background-color: #000000;
       position: absolute;
-      top: 80%;
-      left: 20%;
-      background-color: $white1;
       width: 300px;
       padding: 16px;
     }
+
+    // INDIVIDUAL TEXT CONTAINER
+
+    &--Hair-texts,
+    &--Brow-texts,
+    &--Waxing-texts {
+      top: 80%;
+      left: 20%;
+    }
+    &--Lash-texts,
+    &--Beard-texts,
+    &--Facial-texts {
+      top: 80%;
+      right: 20%;
+    }
     &--category {
+      color: $white2;
       font-size: 14px;
-      padding-bottom: 16px;
+      font-weight: bold;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $white2;
     }
   }
   &__list-item:nth-child(1) {
-    margin-bottom: 516px;
+    margin-bottom: 720px;
+  }
+  &__list-item:nth-child(2) {
+    margin-bottom: 165px;
+  }
+  &__list-item:nth-child(3) {
+    margin-bottom: 330px;
+  }
+  &__list-item:nth-child(4) {
+    margin-bottom: 110px;
+  }
+  &__list-item:nth-child(5) {
+    margin-bottom: 280px;
+  }
+  &__list-item:nth-child(6) {
+    margin-bottom: 100px;
   }
 
   // Service details
@@ -57,21 +97,31 @@
   //   }
   &__service-detail-content {
     display: flex;
-    margin-bottom: 5px;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 1.5px 0px;
+    // border-bottom: 1px solid $blueGray;
 
     &--name {
-      font-size: 14px;
+      font-size: 13px;
+      line-height: 18px;
       font-family: "Roboto", sans-serif;
+      text-transform: capitalize;
+      color: $white2;
     }
     &--price {
-      font-size: 14px;
-      font-family: "Roboto", sans-serif;
-      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      //   font-family: "Roboto", sans-serif;
+      //   font-weight: normal;
+      color: $white2;
     }
     &--duration {
-      font-size: 14px;
-      font-family: "Roboto", sans-serif;
-      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      //   font-family: "Roboto", sans-serif;
+      //   font-weight: normal;
+      color: $white2;
     }
   }
 }
