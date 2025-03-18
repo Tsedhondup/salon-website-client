@@ -5,9 +5,11 @@ import hair from "../../assets/images/hair-service.jpg";
 import beard from "../../assets/images/beard-service.jpg";
 import brow from "../../assets/images/brow-service.jpg";
 import facial from "../../assets/images/facial-service.jpg";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 import "./MainServices.scss";
+import BookButton from "../BookButton/BookButton";
 const MainServices = () => {
   const chooseXcoordinate = (serviceName) => {
     if (
@@ -15,7 +17,7 @@ const MainServices = () => {
       serviceName === "Brow" ||
       serviceName === "Waxing"
     ) {
-      return -60;
+      return -90;
     } else {
       return 60;
     }
@@ -43,17 +45,28 @@ const MainServices = () => {
     <section className="main-services">
       <motion.h1
         className="main-services__header"
-        initial={initialView}
-        whileInView={whileInView}
-        viewport={{ once: true, amount: 1 }}
+        initial={{
+          opacity: 0,
+          // x: chooseXcoordinate(item.category),
+          // translateX: 60,
+          translateX: 60,
+        }}
+        whileInView={{
+          opacity: 1,
+          translateX: 0,
+        }}
+        transition={{
+          ease: "linear",
+          duration: 0.8,
+        }}
+        viewport={{ once: true, amount: 0 }}
       >
-        Discover a wide range of services at
+        Discover a wide range of services at <br />
         <span className="main-services__header--salon-name">
           Nano Beauty Salon
         </span>
         , tailored to elevate your beauty experience
       </motion.h1>
-
       <div className="main-services__lists">
         {serviceData.map((item) => {
           const serviecEl = (
@@ -142,6 +155,29 @@ const MainServices = () => {
           return serviecEl;
         })}
       </div>
+      <motion.div className="main-services__button-container">
+        <motion.a
+          className="main-services__button-container--button"
+          href="#"
+          initial={{
+            borderColor: "#21272e",
+            opacity: 0,
+          }}
+          whileInView={{
+            borderColor: "#ffffff",
+            opacity: 1,
+            transition: {
+              ease: "linear",
+              duration: 0.5,
+              delay: 1,
+              borderColor: { delay: 1.5 },
+            },
+          }}
+          viewport={{ once: true, amount: 1 }}
+        >
+          More services
+        </motion.a>
+      </motion.div>
     </section>
   );
 };
