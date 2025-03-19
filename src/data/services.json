@@ -16,6 +16,16 @@
                 "name": "Lash lift and brow lamination",
                 "price": "$150",
                 "duration": "2 hrs"
+            },
+            {
+                "name": "Classic fill",
+                "price": "$110",
+                "duration": "2.5 hrs"
+            },
+            {
+                "name": "Classic fill",
+                "price": "$60",
+                "duration": "1 hr"
             }
         ]
     },
@@ -153,16 +163,6 @@
         "category": "Hair",
         "services": [
             {
-                "name": "Classic",
-                "price": "$110",
-                "duration": "2.5 hrs"
-            },
-            {
-                "name": "Classic fill",
-                "price": "$60",
-                "duration": "1 hr"
-            },
-            {
                 "name": "Men haircut",
                 "price": "$25",
                 "duration": "30 mins"
@@ -266,6 +266,11 @@
                 "name": "Toner",
                 "price": "$30+",
                 "duration": "30 mins"
+            },
+            {
+                "name": "Hair extention",
+                "price": "$500+",
+                "duration": "30 min"
             }
         ]
     }

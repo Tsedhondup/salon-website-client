@@ -129,7 +129,7 @@ const AboutUsHome = () => {
       <div className="about-us-home__book-button-container">
         <motion.a
           className="about-us-home__book-button-container--button"
-          href="tel:+4167440019"
+          href="tel:+14167440019"
           initial={{
             opacity: 0,
           }}
