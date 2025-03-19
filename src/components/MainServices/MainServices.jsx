@@ -67,14 +67,31 @@ const MainServices = () => {
         }}
         transition={{
           ease: "linear",
-          duration: 0.8,
+          duration: 0.5,
         }}
         viewport={{ once: true, amount: 0 }}
       >
-        {/* Discover a wide range of services , tailored to elevate your beauty
-        experience */}
         Our services
       </motion.h1>
+      <motion.h3
+        className="main-services__price-reminder"
+        initial={{
+          opacity: 0,
+
+          translateX: 60,
+        }}
+        whileInView={{
+          opacity: 1,
+          translateX: 0,
+        }}
+        transition={{
+          ease: "linear",
+          duration: 0.7,
+        }}
+        viewport={{ once: true, amount: 0 }}
+      >
+        Prices are estimates and may change based on service complexity
+      </motion.h3>
       <div className="main-services__lists">
         {serviceData.map((item) => {
           const serviecEl = (
@@ -204,9 +221,6 @@ const MainServices = () => {
                         <motion.h3 className="main-services__service-detail-content--price">
                           {item2.price}
                         </motion.h3>
-                        {/* <motion.h3 className="main-services__service-detail-content--duration">
-                          {item2.duration}
-                        </motion.h3> */}
                       </motion.div>
                     );
                   })}

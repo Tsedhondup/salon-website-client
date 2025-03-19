@@ -15,12 +15,18 @@
     line-height: 28px;
     text-align: right;
     padding: 2px 0px;
-    margin-bottom: 64px;
+    margin-bottom: 2px;
     border-bottom: 1px solid $white2;
-    &--salon-name {
-      font-size: 20px;
-      font-weight: bold;
-    }
+  }
+  // Price reminder
+  &__price-reminder {
+    color: $white2;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 18px;
+    text-align: right;
+    padding: 2px 0px;
+    margin-bottom: 64px;
   }
 
   // images container
@@ -180,11 +186,6 @@
       font-size: 13px;
       font-family: "Roboto", sans-serif;
       font-weight: normal;
-      line-height: 18px;
-      color: $white2;
-    }
-    &--duration {
-      font-size: 12px;
       line-height: 18px;
       color: $white2;
     }
