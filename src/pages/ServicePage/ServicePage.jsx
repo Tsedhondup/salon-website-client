@@ -1,6 +1,7 @@
 import Header from "../../components/Header/Header";
 import MainServices from "../../components/MainServices/MainServices";
 import Gallery from "../../components/Gallery/Gallery";
+import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 import { useEffect } from "react";
 const ServicePage = () => {
@@ -10,8 +11,8 @@ const ServicePage = () => {
   return (
     <>
       <Header />
-      <MainServices />
-      <Gallery />
+      <MainServices /> <Gallery />
+      <Contact />
       <Footer />
     </>
   );

@@ -56,7 +56,11 @@ const Header = () => {
           }}
           viewport={{ once: true, amount: 1 }}
         >
-          <Link className="header__show-nav-wrapper--brand-name" key="02">
+          <Link
+            to="/"
+            className="header__show-nav-wrapper--brand-name"
+            key="02"
+          >
             Nano's Beauty Salon
           </Link>
         </motion.div>
