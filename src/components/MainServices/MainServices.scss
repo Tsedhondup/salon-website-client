@@ -8,6 +8,10 @@
   padding-top: 30%;
   background-color: #000000;
   background-color: $blackMain;
+  @include tablet {
+    padding: 32px;
+    padding-top: 20%;
+  }
   &__header {
     color: $white2;
     font-size: 18px;
@@ -27,6 +31,9 @@
     text-align: right;
     padding: 2px 0px;
     margin-bottom: 64px;
+    @include tablet {
+      margin-bottom: 128px;
+    }
   }
 
   // images container
@@ -45,10 +52,10 @@
     position: relative;
   }
 
+  // Name and Price header
   &__list-Lash-header,
   &__list-Facial-header,
   &__list-Waxing-header {
-    // background-color: $white2;
     border-bottom: 1px solid $white2;
     color: $white2;
     font-size: 11px;
@@ -60,11 +67,14 @@
     padding: 10px 0px;
     display: flex;
     gap: 64px;
+    @include tablet {
+      width: 390px;
+      font-size: 13px;
+    }
   }
   &__list-Beard-header,
   &__list-Brow-header,
   &__list-Hair-header {
-    // background-color: $white2;
     border-bottom: 1px solid $white2;
     color: $white2;
     font-size: 11px;
@@ -76,15 +86,25 @@
     padding: 10px 0px;
     display: flex;
     gap: 64px;
+    @include tablet {
+      width: 390px;
+      font-size: 13px;
+    }
   }
 
   &__list-item {
     position: relative;
+    border-bottom: 1px solid $white2;
+
     &--image {
       display: block;
       object-fit: cover;
       height: 250px;
       width: 270px;
+      @include tablet {
+        width: 390px;
+        height: 370px;
+      }
     }
 
     &--Hair-image,
@@ -92,8 +112,7 @@
     &--Waxing-image {
       position: relative;
     }
-    // Service Title
-
+    // Service Category
     &--Lash-title,
     &--Facial-title,
     &--Waxing-title {
@@ -105,6 +124,10 @@
       left: 0%;
       width: 250px;
       padding: 10px 0px;
+      @include tablet {
+        top: -10%;
+        font-size: 18px;
+      }
     }
     &--Beard-title,
     &--Brow-title,
@@ -117,20 +140,30 @@
       right: 0%;
       width: 250px;
       padding: 10px 0px;
+      @include tablet {
+        top: -10%;
+        font-size: 18px;
+      }
     }
+    // GENERAL TEXT CONTAINER
     &--texts {
       width: 250px;
       padding: 10px 0px;
+      @include tablet {
+        width: 390px;
+      }
     }
 
     // INDIVIDUAL TEXT CONTAINER
-
     &--Lash-texts,
     &--Facial-texts,
     &--Waxing-texts {
       position: absolute;
       top: 114%;
       right: 0;
+      @include tablet {
+        top: 108%;
+      }
     }
     &--Beard-texts,
     &--Brow-texts,
@@ -138,6 +171,9 @@
       position: absolute;
       top: 114%;
       left: 0;
+      @include tablet {
+        top: 108%;
+      }
     }
     &--category {
       color: $darkBlue;
@@ -173,6 +209,9 @@
     justify-content: space-between;
     gap: 64px;
     padding: 2px 0px;
+    @include tablet {
+      padding: 4px 0px;
+    }
 
     &--name {
       font-size: 13px;
@@ -181,6 +220,9 @@
       text-transform: capitalize;
       line-height: 18px;
       color: $white2;
+      @include tablet {
+        font-size: 14px;
+      }
     }
     &--price {
       font-size: 13px;
@@ -188,6 +230,9 @@
       font-weight: normal;
       line-height: 18px;
       color: $white2;
+      @include tablet {
+        font-size: 14px;
+      }
     }
   }
   // BUTTON

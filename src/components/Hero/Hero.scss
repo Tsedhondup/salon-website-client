@@ -25,14 +25,20 @@
   background-position: center;
   background-repeat: no-repeat;
   animation: slideBackground 30s infinite linear;
+  @include tablet2 {
+    height: 700px;
+  }
   &__over-lay {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 16px;
     padding-top: 64px;
   }
   &__content {
     padding-top: 40%;
     background-color: rgba(239, 242, 249, 0);
+    @include tablet2 {
+      padding-top: 10%;
+      height: 100%;
+    }
   }
   &__merchant-name {
     color: $white1;
@@ -45,6 +51,10 @@
       font-size: 45px;
       line-height: 53px;
     }
+    @include tablet {
+      font-size: 60px;
+      line-height: 68px;
+    }
   }
   &__page-headline {
     color: $white1;
@@ -56,6 +66,9 @@
     @include tablet {
       font-size: 24px;
       font-weight: 900;
+    }
+    @include tablet2 {
+      font-size: 30px;
     }
   }
   &__button-container {
@@ -75,6 +88,10 @@
       max-width: 180px;
       border: 1px solid $white1;
       color: $white1;
+      @include tablet2{
+        max-width: 200px;
+        padding: 20px;
+      }
     }
     &--book:hover {
       background-color: $white2;

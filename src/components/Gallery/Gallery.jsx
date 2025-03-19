@@ -2,7 +2,6 @@ import "./Gallery.scss";
 import BookButton from "../BookButton/BookButton";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import image2 from "../../assets/images/g2.jpeg";
 import image3 from "../../assets/images/g3.jpeg";
 import image4 from "../../assets/images/client1.jpeg";
 import pic1 from "../../assets/images/pic1.jpeg";

@@ -18,18 +18,18 @@
     justify-content: flex-end;
     align-items: center;
     z-index: 100;
-    // @include tablet {
-    //   display: none;
-    // }
+
     &--brand-name {
       color: $darkBlue;
-      // color: $blackMain;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 20px;
       font-weight: normal;
       position: relative;
       z-index: 200;
+      @include tablet2 {
+        font-weight: 900;
+      }
     }
     &--open-button,
     &--close-button {

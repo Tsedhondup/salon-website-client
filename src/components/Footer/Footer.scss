@@ -6,6 +6,9 @@
 .footer {
   padding: 16px;
   margin-top: 16px;
+  @include tablet {
+    padding: 32px;
+  }
   &__salon-info {
     &--name {
       color: $armyBlue;
@@ -18,6 +21,7 @@
       //   width: fit-content;
     }
     &--title {
+      color: $armyBlue;
       font-size: 14px;
       font-weight: bold;
       text-align: center;

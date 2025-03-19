@@ -36,8 +36,7 @@ const Header = () => {
         y: 0,
         transition: {
           ease: "linear",
-          duration: 0.5,
-          delay: 1.5,
+          duration: 1,
         },
       }}
       viewport={{ once: true, amount: 0 }}
@@ -53,7 +52,6 @@ const Header = () => {
             transition: {
               ease: "linear",
               duration: 0.5,
-              delay: 2,
             },
           }}
           viewport={{ once: true, amount: 1 }}
@@ -77,7 +75,6 @@ const Header = () => {
             transition: {
               ease: "linear",
               duration: 0.5,
-              delay: 2,
             },
           }}
           viewport={{ once: true, amount: 1 }}
