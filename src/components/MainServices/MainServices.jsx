@@ -13,13 +13,25 @@ import BookButton from "../BookButton/BookButton";
 const MainServices = () => {
   const chooseXcoordinate = (serviceName) => {
     if (
-      serviceName === "Hair" ||
-      serviceName === "Brow" ||
+      serviceName === "Lash" ||
+      serviceName === "Facial" ||
       serviceName === "Waxing"
     ) {
       return -90;
     } else {
       return 60;
+    }
+  };
+
+  const setXcoordinateForServiceTitle = (serviceName) => {
+    if (
+      serviceName === "Lash" ||
+      serviceName === "Facial" ||
+      serviceName === "Waxing"
+    ) {
+      return 60;
+    } else {
+      return -90;
     }
   };
 
@@ -36,7 +48,7 @@ const MainServices = () => {
       duration: 0.5,
     },
   };
-  const images = [hair, lash, brow, beard, waxing, facial];
+  const images = [lash, beard, facial, brow, waxing, hair];
   let indexNumber = 0;
   const serviceData = services.map((item) => {
     return item;
@@ -61,16 +73,17 @@ const MainServices = () => {
         }}
         viewport={{ once: true, amount: 0 }}
       >
-        Discover a wide range of services at <br />
+        Discover a wide range of services
+        {/* at <br />
         <span className="main-services__header--salon-name">
           Nano Beauty Salon
-        </span>
+        </span> */}
         , tailored to elevate your beauty experience
       </motion.h1>
       <div className="main-services__lists">
         {serviceData.map((item) => {
           const serviecEl = (
-            <div className="main-services__list-item">
+            <div className="main-services__list-item" key={item.category}>
               <motion.div
                 className={`main-services__${item.category}-container`}
               >
@@ -83,8 +96,7 @@ const MainServices = () => {
                   `}
                   initial={{
                     opacity: 0,
-                    // x: chooseXcoordinate(item.category),
-                    // translateX: 60,
+
                     translateX: chooseXcoordinate(item.category),
                   }}
                   whileInView={{
@@ -93,10 +105,28 @@ const MainServices = () => {
                   }}
                   transition={{
                     ease: "linear",
-                    duration: 0.5,
+                    duration: 0.7,
                   }}
                   viewport={{ once: true, amount: 0 }}
                 />
+                <motion.h2
+                  className={`main-services__list-item--${item.category}-title`}
+                  initial={{
+                    opacity: 0,
+                    translateX: setXcoordinateForServiceTitle(item.category),
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    translateX: 0,
+                  }}
+                  transition={{
+                    ease: "linear",
+                    duration: 0.7,
+                  }}
+                  viewport={{ once: true, amount: 0 }}
+                >
+                  {item.category}
+                </motion.h2>
               </motion.div>
 
               <div
