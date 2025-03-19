@@ -9,7 +9,6 @@ import facial from "../../assets/images/facial-service.jpg";
 import { motion } from "framer-motion";
 
 import "./MainServices.scss";
-import BookButton from "../BookButton/BookButton";
 const MainServices = () => {
   const chooseXcoordinate = (serviceName) => {
     if (
@@ -59,8 +58,7 @@ const MainServices = () => {
         className="main-services__header"
         initial={{
           opacity: 0,
-          // x: chooseXcoordinate(item.category),
-          // translateX: 60,
+
           translateX: 60,
         }}
         whileInView={{
@@ -73,12 +71,8 @@ const MainServices = () => {
         }}
         viewport={{ once: true, amount: 0 }}
       >
-        Discover a wide range of services
-        {/* at <br />
-        <span className="main-services__header--salon-name">
-          Nano Beauty Salon
-        </span> */}
-        , tailored to elevate your beauty experience
+        Discover a wide range of services , tailored to elevate your beauty
+        experience
       </motion.h1>
       <div className="main-services__lists">
         {serviceData.map((item) => {
@@ -159,35 +153,36 @@ const MainServices = () => {
                   {item.services.map((item2) => {
                     // Individual service and its detail
                     return (
-                      <div
+                      <motion.div
                         key={item2.name}
                         className="main-services__service-detail-content"
+                        initial={{
+                          opacity: 0,
+                          translateX: setXcoordinateForServiceTitle(
+                            item.category
+                          ),
+                        }}
+                        whileInView={{
+                          opacity: 1,
+                          translateX: 0,
+                        }}
+                        transition={{
+                          ease: "linear",
+                          duration: 0.5,
+                          delay: 0.5,
+                        }}
+                        viewport={{ once: true, amount: 0 }}
                       >
-                        <motion.h3
-                          className="main-services__service-detail-content--name"
-                          initial={initialView}
-                          whileInView={whileInView}
-                          viewport={{ once: true, amount: 1 }}
-                        >
+                        <motion.h3 className="main-services__service-detail-content--name">
                           {item2.name}
                         </motion.h3>
-                        <motion.h3
-                          className="main-services__service-detail-content--price"
-                          initial={initialView}
-                          whileInView={whileInView}
-                          viewport={{ once: true, amount: 1 }}
-                        >
+                        <motion.h3 className="main-services__service-detail-content--price">
                           {item2.price}
                         </motion.h3>
-                        <motion.h3
-                          className="main-services__service-detail-content--duration"
-                          initial={initialView}
-                          whileInView={whileInView}
-                          viewport={{ once: true, amount: 1 }}
-                        >
+                        <motion.h3 className="main-services__service-detail-content--duration">
                           {item2.duration}
                         </motion.h3>
-                      </div>
+                      </motion.div>
                     );
                   })}
                 </div>
