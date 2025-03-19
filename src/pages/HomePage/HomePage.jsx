@@ -7,15 +7,20 @@ import Footer from "../../components/Footer/Footer";
 import AboutUsHome from "../../components/AboutUsHome/AboutUsHome";
 import HomePageServiceLists from "../../components/HomePageServiceLists/HomePageServiceLists";
 import Testimonials from "../../components/Testimonials/Testimonials";
+import { useEffect } from "react";
+
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <section>
       <Header />
       <Hero />
-      <AboutUsHome />
       <HomePageServices />
       <HomePageServiceLists />
-      <Testimonials />
+      <Testimonials /> <AboutUsHome />
       <Gallery />
       <Contact />
       <Footer />

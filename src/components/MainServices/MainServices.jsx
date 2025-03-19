@@ -158,7 +158,7 @@ const MainServices = () => {
       <motion.div className="main-services__button-container">
         <motion.a
           className="main-services__button-container--button"
-          href="#"
+          href="tel:+4167440019"
           initial={{
             borderColor: "#21272e",
             opacity: 0,
@@ -175,7 +175,7 @@ const MainServices = () => {
           }}
           viewport={{ once: true, amount: 1 }}
         >
-          More services
+          Book Now
         </motion.a>
       </motion.div>
     </section>

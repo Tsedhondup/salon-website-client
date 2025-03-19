@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import "./Header.scss";
@@ -41,9 +42,7 @@ const Header = () => {
     >
       {/*  Show navigation button */}
       <div className="header__show-nav-wrapper">
-        <motion.h2
-          className="header__show-nav-wrapper--brand-name"
-          key="02"
+        <motion.div
           initial={{
             opacity: 0,
           }}
@@ -57,8 +56,11 @@ const Header = () => {
           }}
           viewport={{ once: true, amount: 1 }}
         >
-          Nano's Beauty Salon
-        </motion.h2>
+          <Link className="header__show-nav-wrapper--brand-name" key="02">
+            Nano's Beauty Salon
+          </Link>
+        </motion.div>
+
         <motion.div
           className="header__button-container"
           initial={{
@@ -89,15 +91,15 @@ const Header = () => {
 
       <div className={`header__links ${linkClass}`}>
         <div className="header__link-container">
-          <a href="#" className="header__link-container--link">
+          <Link to="/services" className="header__link-container--link">
             Services
-          </a>
-          <a href="#" className="header__link-container--link">
+          </Link>
+          <Link href="#" className="header__link-container--link">
             Contact
-          </a>
-          <a href="#" className="header__link-container--link">
+          </Link>
+          <Link href="#" className="header__link-container--link">
             About Us
-          </a>
+          </Link>
         </div>
       </div>
     </motion.section>
