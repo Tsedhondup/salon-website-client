@@ -6,9 +6,10 @@
   position: fixed;
   top: 0;
   right: 0;
-  padding: 0px 16px;
   z-index: 100;
+  padding: 16px;
   @include tablet {
+    padding: 0px 16px;
     display: flex;
   }
   // SHOW NAV BUTTON
@@ -63,7 +64,6 @@
   //LINKS
   &__links {
     padding-top: 32px;
-    padding-bottom: 16px;
     background-color: $white1;
     display: none;
     @include tablet {

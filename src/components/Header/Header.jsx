@@ -100,9 +100,9 @@ const Header = () => {
           <Link to="/services" className="header__link-container--link">
             Services
           </Link>
-          <Link href="#" className="header__link-container--link">
+          <a href="tel:+4167440019" className="header__link-container--link">
             Book
-          </Link>
+          </a>
           <Link href="#" className="header__link-container--link">
             About Us
           </Link>
