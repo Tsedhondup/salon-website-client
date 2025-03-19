@@ -11,6 +11,7 @@
       color: $armyBlue;
       font-size: 20px;
       font-weight: 900;
+      text-align: center;
       padding-bottom: 16px;
       margin-bottom: 16px;
       border-bottom: 1px solid $armyBlue;
@@ -19,11 +20,13 @@
     &--title {
       font-size: 14px;
       font-weight: bold;
+      text-align: center;
       line-height: 22px;
       margin-bottom: 32px;
     }
     &--location {
       font-size: 14px;
+      text-align: center;
       padding-bottom: 10px;
     }
     &--address {
@@ -32,9 +35,11 @@
       line-height: 22px;
       font-weight: bold;
       font-family: "Roboto", sans-serif;
+      text-align: center;
       text-decoration: none;
       color: $darkBlue;
       width: 240px;
+      margin: auto;
     }
     &--phone-number {
       display: block;
@@ -42,6 +47,7 @@
       margin-top: 5px;
       margin-bottom: 64px;
       text-decoration: none;
+      text-align: center;
       font-weight: bold;
       font-family: "Roboto", sans-serif;
     }
