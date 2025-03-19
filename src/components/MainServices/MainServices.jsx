@@ -122,6 +122,30 @@ const MainServices = () => {
                 >
                   {item.category}
                 </motion.h2>
+                <motion.div
+                  className={`main-services__list-${item.category}-header`}
+                  initial={{
+                    opacity: 0,
+                    translateX: setXcoordinateForServiceTitle(item.category),
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    translateX: 0,
+                  }}
+                  transition={{
+                    ease: "linear",
+                    duration: 0.5,
+                    delay: 0.5,
+                  }}
+                  viewport={{ once: true, amount: 0 }}
+                >
+                  <h3 className="main-services__list-item-header--name">
+                    Names
+                  </h3>
+                  <h3 className="main-services__list-item-header--price">
+                    prices +
+                  </h3>
+                </motion.div>
               </motion.div>
 
               <motion.div
@@ -180,9 +204,9 @@ const MainServices = () => {
                         <motion.h3 className="main-services__service-detail-content--price">
                           {item2.price}
                         </motion.h3>
-                        <motion.h3 className="main-services__service-detail-content--duration">
+                        {/* <motion.h3 className="main-services__service-detail-content--duration">
                           {item2.duration}
-                        </motion.h3>
+                        </motion.h3> */}
                       </motion.div>
                     );
                   })}

@@ -5,6 +5,9 @@
 .testimonial {
   padding: 32px 16px;
   background-color: $darkBlue;
+  // @include tablet{
+  //   ta
+  // }
   &__rate-container {
     display: flex;
     justify-content: center;

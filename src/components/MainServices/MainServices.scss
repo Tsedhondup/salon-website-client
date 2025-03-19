@@ -36,6 +36,38 @@
     justify-content: flex-end;
     position: relative;
   }
+
+  &__list-Lash-header,
+  &__list-Facial-header,
+  &__list-Waxing-header {
+    // background-color: $white2;
+    border-bottom: 1px solid $white2;
+    color: $white2;
+    font-size: 11px;
+    text-align: left;
+    position: absolute;
+    top: 99%;
+    right: 0%;
+    width: 250px;
+    padding: 10px 0px;
+    display: flex;
+  }
+  &__list-Beard-header,
+  &__list-Brow-header,
+  &__list-Hair-header {
+    // background-color: $white2;
+    border-bottom: 1px solid $white2;
+    color: $white2;
+    font-size: 11px;
+    text-align: left;
+    position: absolute;
+    top: 99%;
+    left: 0%;
+    width: 250px;
+    padding: 10px 0px;
+    display: flex;
+  }
+
   &__list-item {
     position: relative;
     &--image {
@@ -55,37 +87,30 @@
     &--Lash-title,
     &--Facial-title,
     &--Waxing-title {
-      color: $darkBlue;
-      background-color: $blackMain;
-      background-color: $white2;
-      font-size: 14px;
-      text-align: center;
+      color: $white2;
+      font-size: 15px;
+      text-align: left;
       position: absolute;
-      top: 84%;
-      right: 0%;
-      // transform: translate(-50%, -50%);
-      width: 270px;
-      padding: 10px;
+      top: -14%;
+      left: 0%;
+      width: 250px;
+      padding: 10px 0px;
     }
     &--Beard-title,
     &--Brow-title,
     &--Hair-title {
-      color: $darkBlue;
-      background-color: $blackMain;
-      background-color: $white2;
-      font-size: 14px;
-      text-align: center;
+      color: $white2;
+      font-size: 15px;
+      text-align: right;
       position: absolute;
-      top: 84%;
-      left: 0%;
-      width: 270px;
-      padding: 10px;
+      top: -14%;
+      right: 0%;
+      width: 250px;
+      padding: 10px 0px;
     }
     &--texts {
-      background-color: #000000;
-      background-color: $white2;
-      width: 270px;
-      padding: 16px;
+      width: 250px;
+      padding: 10px 0px;
     }
 
     // INDIVIDUAL TEXT CONTAINER
@@ -94,14 +119,14 @@
     &--Facial-texts,
     &--Waxing-texts {
       position: absolute;
-      top: 100%;
+      top: 114%;
       right: 0;
     }
     &--Beard-texts,
     &--Brow-texts,
     &--Hair-texts {
       position: absolute;
-      top: 100%;
+      top: 114%;
       left: 0;
     }
     &--category {
@@ -145,18 +170,21 @@
       font-family: "Roboto", sans-serif;
       text-transform: capitalize;
       color: $darkBlue;
+      color: $white2;
     }
     &--price {
       font-size: 12px;
       line-height: 18px;
 
       color: $darkBlue;
+      color: $white2;
     }
     &--duration {
       font-size: 12px;
       line-height: 18px;
 
       color: $darkBlue;
+      color: $white2;
     }
   }
   // BUTTON
