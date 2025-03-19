@@ -5,9 +5,31 @@ import BookButton from "../BookButton/BookButton";
 import nanoClientImage from "../../assets/images/nano1.jpg";
 import "./HomePageServices.scss";
 const HomePageServices = () => {
+  // Animation
+  const initialView = {
+    opacity: 0,
+    y: 60,
+  };
+  const whileInView = {
+    opacity: 1,
+    y: 0,
+    transition: {
+      ease: "linear",
+      duration: 0.5,
+    },
+  };
   return (
     <section className="service-home-page">
       <section className="service-home-page__content">
+        <motion.h2
+          className="service-home-page__header"
+          initial={initialView}
+          whileInView={whileInView}
+          viewport={{ once: true, amount: 1 }}
+        >
+          Explore our beauty services designed to enhance your natural beauty
+          and confidence
+        </motion.h2>
         <div className="image-text-container">
           <motion.img
             className="image-text-container__image"

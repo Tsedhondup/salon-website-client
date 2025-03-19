@@ -115,9 +115,18 @@ const Footer = () => {
         <div className="footer__copy-right-container">
           <motion.p
             className="footer__copy-right-container--info"
-            initial={initialView}
-            whileInView={whileInView}
-            viewport={{ once: true, amount: 1 }}
+            initial={{
+              opacity: 0,
+            }}
+            whileInView={{
+              opacity: 1,
+
+              transition: {
+                ease: "linear",
+                duration: 1,
+              },
+            }}
+            viewport={{ once: true, amount: 0 }}
           >
             Copyright © 2025 Nano's Beauty Salon. All rights reserved.
           </motion.p>

@@ -4,18 +4,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap"); //
 
 .main-services {
-    padding: 16px;
+  padding: 16px;
   padding-top: 30%;
   background-color: #000000;
   background-color: $blackMain;
   &__header {
     color: $white2;
     font-size: 18px;
-    // font-family: "Roboto", sans-serif;
     font-weight: normal;
     line-height: 28px;
-    padding: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
+    border-bottom: 1px solid $white2;
     &--salon-name {
       font-size: 20px;
       font-weight: bold;

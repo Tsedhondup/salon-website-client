@@ -71,8 +71,9 @@ const MainServices = () => {
         }}
         viewport={{ once: true, amount: 0 }}
       >
-        Discover a wide range of services , tailored to elevate your beauty
-        experience
+        {/* Discover a wide range of services , tailored to elevate your beauty
+        experience */}
+        Our services
       </motion.h1>
       <div className="main-services__lists">
         {serviceData.map((item) => {

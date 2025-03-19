@@ -20,8 +20,7 @@ const HomePageServiceLists = () => {
         }}
         viewport={{ once: true, amount: 1 }}
       >
-        Explore our beauty services designed to enhance your natural beauty and
-        confidence
+        Check out our most popular services, trusted by many
       </motion.h3>
       <motion.div
         className="homepage-service-lists__list-container"
