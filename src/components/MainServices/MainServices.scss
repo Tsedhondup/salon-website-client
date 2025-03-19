@@ -13,6 +13,8 @@
     font-size: 18px;
     font-weight: normal;
     line-height: 28px;
+    text-align: right;
+    padding: 2px 0px;
     margin-bottom: 64px;
     border-bottom: 1px solid $white2;
     &--salon-name {
@@ -36,6 +38,40 @@
     justify-content: flex-end;
     position: relative;
   }
+
+  &__list-Lash-header,
+  &__list-Facial-header,
+  &__list-Waxing-header {
+    // background-color: $white2;
+    border-bottom: 1px solid $white2;
+    color: $white2;
+    font-size: 11px;
+    text-align: left;
+    position: absolute;
+    top: 99%;
+    right: 0%;
+    width: 250px;
+    padding: 10px 0px;
+    display: flex;
+    gap: 64px;
+  }
+  &__list-Beard-header,
+  &__list-Brow-header,
+  &__list-Hair-header {
+    // background-color: $white2;
+    border-bottom: 1px solid $white2;
+    color: $white2;
+    font-size: 11px;
+    text-align: left;
+    position: absolute;
+    top: 99%;
+    left: 0%;
+    width: 250px;
+    padding: 10px 0px;
+    display: flex;
+    gap: 64px;
+  }
+
   &__list-item {
     position: relative;
     &--image {
@@ -55,37 +91,30 @@
     &--Lash-title,
     &--Facial-title,
     &--Waxing-title {
-      color: $darkBlue;
-      background-color: $blackMain;
-      background-color: $white2;
-      font-size: 14px;
-      text-align: center;
+      color: $white2;
+      font-size: 15px;
+      text-align: left;
       position: absolute;
-      top: 84%;
-      right: 0%;
-      // transform: translate(-50%, -50%);
-      width: 270px;
-      padding: 10px;
+      top: -14%;
+      left: 0%;
+      width: 250px;
+      padding: 10px 0px;
     }
     &--Beard-title,
     &--Brow-title,
     &--Hair-title {
-      color: $darkBlue;
-      background-color: $blackMain;
-      background-color: $white2;
-      font-size: 14px;
-      text-align: center;
+      color: $white2;
+      font-size: 15px;
+      text-align: right;
       position: absolute;
-      top: 84%;
-      left: 0%;
-      width: 270px;
-      padding: 10px;
+      top: -14%;
+      right: 0%;
+      width: 250px;
+      padding: 10px 0px;
     }
     &--texts {
-      background-color: #000000;
-      background-color: $white2;
-      width: 270px;
-      padding: 16px;
+      width: 250px;
+      padding: 10px 0px;
     }
 
     // INDIVIDUAL TEXT CONTAINER
@@ -94,14 +123,14 @@
     &--Facial-texts,
     &--Waxing-texts {
       position: absolute;
-      top: 100%;
+      top: 114%;
       right: 0;
     }
     &--Beard-texts,
     &--Brow-texts,
     &--Hair-texts {
       position: absolute;
-      top: 100%;
+      top: 114%;
       left: 0;
     }
     &--category {
@@ -115,48 +144,49 @@
     }
   }
   &__list-item:nth-child(1) {
-    margin-bottom: 310px;
+    margin-bottom: 290px;
   }
   &__list-item:nth-child(2) {
-    margin-bottom: 226px;
+    margin-bottom: 216px;
   }
   &__list-item:nth-child(3) {
-    margin-bottom: 208px;
+    margin-bottom: 188px;
   }
   &__list-item:nth-child(4) {
-    margin-bottom: 444px;
+    margin-bottom: 424px;
   }
   &__list-item:nth-child(5) {
-    margin-bottom: 388px;
+    margin-bottom: 368px;
   }
   &__list-item:nth-child(6) {
-    margin-bottom: 904px;
+    margin-bottom: 730px;
   }
 
   &__service-detail-content {
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+    gap: 64px;
     padding: 2px 0px;
 
     &--name {
       font-size: 13px;
-      line-height: 18px;
       font-family: "Roboto", sans-serif;
+      font-weight: normal;
       text-transform: capitalize;
-      color: $darkBlue;
+      line-height: 18px;
+      color: $white2;
     }
     &--price {
-      font-size: 12px;
+      font-size: 13px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
       line-height: 18px;
-
-      color: $darkBlue;
+      color: $white2;
     }
     &--duration {
       font-size: 12px;
       line-height: 18px;
-
-      color: $darkBlue;
+      color: $white2;
     }
   }
   // BUTTON

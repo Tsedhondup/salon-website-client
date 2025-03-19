@@ -18,12 +18,12 @@
                 "duration": "2 hrs"
             },
             {
-                "name": "Classic fill",
+                "name": "Classic set",
                 "price": "$110",
                 "duration": "2.5 hrs"
             },
             {
-                "name": "Classic fill",
+                "name": "Lash fill",
                 "price": "$60",
                 "duration": "1 hr"
             }
@@ -184,12 +184,12 @@
             },
             {
                 "name": "Wash and blow dry",
-                "price": "$35+",
+                "price": "$35",
                 "duration": "30+ mins"
             },
             {
                 "name": "Roots color",
-                "price": "$60+",
+                "price": "$60",
                 "duration": "1.5 hr"
             },
             {
@@ -209,22 +209,22 @@
             },
             {
                 "name": "Full hi light",
-                "price": "$140+",
+                "price": "$140",
                 "duration": "3 hrs"
             },
             {
                 "name": "Baby lights",
-                "price": "$200+",
+                "price": "$200",
                 "duration": "3.5 hrs"
             },
             {
                 "name": "Balayage",
-                "price": "$200+",
+                "price": "$200",
                 "duration": "3.5 hrs"
             },
             {
                 "name": "Ombre",
-                "price": "$160+",
+                "price": "$160",
                 "duration": "3 hrs"
             },
             {
@@ -234,7 +234,7 @@
             },
             {
                 "name": "Perm",
-                "price": "$85+",
+                "price": "$85",
                 "duration": "2 hr"
             },
             {
@@ -244,7 +244,7 @@
             },
             {
                 "name": "Roots bleach",
-                "price": "$100+",
+                "price": "$100",
                 "duration": "2 hr"
             },
             {
@@ -254,22 +254,22 @@
             },
             {
                 "name": "Permanent straightening",
-                "price": "$400+",
+                "price": "$400",
                 "duration": "4 hrs"
             },
             {
                 "name": "Hair botox",
-                "price": "$350+",
+                "price": "$350",
                 "duration": "3.5 hrs"
             },
             {
                 "name": "Toner",
-                "price": "$30+",
+                "price": "$30",
                 "duration": "30 mins"
             },
             {
                 "name": "Hair extention",
-                "price": "$500+",
+                "price": "$500",
                 "duration": "30 min"
             }
         ]

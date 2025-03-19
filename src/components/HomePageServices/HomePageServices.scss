@@ -6,12 +6,26 @@
 .service-home-page {
   padding: 16px;
   margin-top: 16px;
+
+  // &__content {
+  //   @include tablet {
+  //     display: flex;
+  //     gap: 16px;
+  //   }
+  // }
+
   &__header {
     font-size: 16px;
     line-height: 22px;
     text-align: center;
     margin-top: 64px;
     margin-bottom: 64px;
+    @include tablet {
+      width: 400px;
+      margin: auto;
+      margin-top: 64px;
+      margin-bottom: 64px;
+    }
   }
 }
 
@@ -23,6 +37,10 @@
     border-radius: 20px;
     height: 350px;
     object-fit: cover;
+    @include tablet {
+      width: 400px;
+      margin: auto;
+    }
   }
   &__texts {
     position: absolute;
@@ -36,6 +54,9 @@
     line-height: 32px;
     padding: 16px;
     width: 94%;
+    @include tablet {
+      width: 350px;
+    }
     &--header {
       font-size: 32px;
     }

@@ -142,7 +142,6 @@ const HomePageServices = () => {
           </motion.div>
         </div>
       </section>
-      <BookButton />
     </section>
   );
 };
