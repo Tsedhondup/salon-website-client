@@ -61,7 +61,7 @@ const Hero = () => {
           <div className="hero__button-container">
             <motion.a
               className="hero__button-container--book"
-              href="tel:+4167440019"
+              href="tel:+14167440019"
               initial={{
                 opacity: 0,
                 color: "#000000",
@@ -89,6 +89,12 @@ const Hero = () => {
           </div>
         </section>
       </section>
+      {/* <section className="hero__birth-location">
+        <h3 className="hero__birth-location__birth">since 2022</h3>
+        <h3 className="hero__birth-location__location">
+          The Albion Mall, 1530 Albion Rd, Etobicoke, ON M9V 1B4
+        </h3>
+      </section> */}
     </motion.section>
   );
 };

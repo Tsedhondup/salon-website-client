@@ -56,7 +56,7 @@ const Footer = () => {
         </motion.a>
         <motion.a
           className="footer__salon-info--phone-number"
-          href="tel:+4167440019"
+          href="tel:+14167440019"
           initial={initialView}
           whileInView={whileInView}
           viewport={{ once: true, amount: 1 }}

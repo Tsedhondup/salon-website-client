@@ -6,7 +6,7 @@ const BookButton = () => {
     <section className="book-button-container">
       <motion.a
         className="book-button-container__button"
-        href="tel:+4167440019"
+        href="tel:+14167440019"
         initial={{
           opacity: 0,
         }}

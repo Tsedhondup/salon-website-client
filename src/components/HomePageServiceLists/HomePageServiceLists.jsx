@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { delay, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./HomePageServiceLists.scss";
 const HomePageServiceLists = () => {
   return (
@@ -210,28 +211,30 @@ const HomePageServiceLists = () => {
         </motion.div>
       </motion.div>
 
-      <motion.div className="homepage-service-lists__button-container">
-        <motion.a
+      <motion.div
+        className="homepage-service-lists__button-container"
+        initial={{
+          borderColor: "#ffffff",
+          opacity: 0,
+        }}
+        whileInView={{
+          borderColor: "#21272e",
+          opacity: 1,
+          transition: {
+            ease: "linear",
+            duration: 0.5,
+            delay: 1,
+            borderColor: { delay: 1.5 },
+          },
+        }}
+        viewport={{ once: true, amount: 1 }}
+      >
+        <Link
+          to="/services"
           className="homepage-service-lists__button-container--button"
-          href="#"
-          initial={{
-            borderColor: "#ffffff",
-            opacity: 0,
-          }}
-          whileInView={{
-            borderColor: "#21272e",
-            opacity: 1,
-            transition: {
-              ease: "linear",
-              duration: 0.5,
-              delay: 1,
-              borderColor: { delay: 1.5 },
-            },
-          }}
-          viewport={{ once: true, amount: 1 }}
         >
           More services
-        </motion.a>
+        </Link>
       </motion.div>
     </section>
   );

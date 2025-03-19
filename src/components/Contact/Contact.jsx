@@ -73,7 +73,7 @@ const Contact = () => {
           For reservation and any other inquiries, Please call us directly at
           <motion.a
             className="contacts__booking-info--phone-number"
-            href="tel:+4167440019"
+            href="tel:+14167440019"
             initial={{
               opacity: 0,
             }}

@@ -6,18 +6,21 @@
   position: fixed;
   top: 0;
   right: 0;
-  padding: 16px;
   z-index: 100;
-
+  padding: 16px;
+  @include tablet {
+    padding: 0px 16px;
+    display: flex;
+  }
   // SHOW NAV BUTTON
   &__show-nav-wrapper {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     z-index: 100;
-    @include tablet {
-      display: none;
-    }
+    // @include tablet {
+    //   display: none;
+    // }
     &--brand-name {
       color: $darkBlue;
       // color: $blackMain;
@@ -35,6 +38,9 @@
       color: $darkBlue;
       position: relative;
       z-index: 200;
+      @include tablet {
+        display: none;
+      }
     }
     &--open-button {
       height: 33px;
@@ -58,15 +64,23 @@
   //LINKS
   &__links {
     padding-top: 32px;
-    padding-bottom: 16px;
     background-color: $white1;
     display: none;
+    @include tablet {
+      display: flex;
+      padding: 16px 0px;
+    }
   }
   // JS DYNAMIC CLASS
   .display-block {
     display: block;
   }
   &__link-container {
+    @include tablet {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+    }
     &--link {
       display: block;
       color: $darkBlue;
@@ -75,27 +89,9 @@
       text-align: right;
       text-decoration: none;
       line-height: 32px;
-    }
-  }
-  // BIRTH AND LOCATION
-  &__birth-location {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 200;
-    padding: 16px;
-    // background-color: rgba(239, 242, 249, 0.05);
-    &--item {
-      font-size: 12px;
-      font-weight: normal;
-      text-decoration: none;
-      width: fit-content;
-      color: $white1;
-    }
-    &--item:nth-child(2) {
-      text-align: right;
+      @include tablet {
+        width: fit-content;
+      }
     }
   }
 }
