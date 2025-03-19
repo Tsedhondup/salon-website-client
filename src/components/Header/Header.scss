@@ -8,16 +8,18 @@
   right: 0;
   padding: 16px;
   z-index: 100;
-
+  @include tablet {
+    display: flex;
+  }
   // SHOW NAV BUTTON
   &__show-nav-wrapper {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     z-index: 100;
-    @include tablet {
-      display: none;
-    }
+    // @include tablet {
+    //   display: none;
+    // }
     &--brand-name {
       color: $darkBlue;
       // color: $blackMain;
@@ -35,6 +37,9 @@
       color: $darkBlue;
       position: relative;
       z-index: 200;
+      @include tablet {
+        display: none;
+      }
     }
     &--open-button {
       height: 33px;
@@ -61,12 +66,18 @@
     padding-bottom: 16px;
     background-color: $white1;
     display: none;
+    @include tablet {
+      display: flex;
+    }
   }
   // JS DYNAMIC CLASS
   .display-block {
     display: block;
   }
   &__link-container {
+    @include tablet {
+      display: flex;
+    }
     &--link {
       display: block;
       color: $darkBlue;
