@@ -121,7 +121,7 @@ const MainServices = () => {
                   }}
                   transition={{
                     ease: "linear",
-                    duration: 0.7,
+                    duration: 0.5,
                   }}
                   viewport={{ once: true, amount: 0 }}
                 >
@@ -129,9 +129,23 @@ const MainServices = () => {
                 </motion.h2>
               </motion.div>
 
-              <div
+              <motion.div
                 key={item.category}
                 className={`main-services__list-item--texts main-services__list-item--${item.category}-texts`}
+                initial={{
+                  opacity: 0,
+                  translateX: setXcoordinateForServiceTitle(item.category),
+                }}
+                whileInView={{
+                  opacity: 1,
+                  translateX: 0,
+                }}
+                transition={{
+                  ease: "linear",
+                  duration: 0.5,
+                  delay: 0.5,
+                }}
+                viewport={{ once: true, amount: 0 }}
               >
                 <motion.h2
                   className="main-services__list-item--category"
@@ -177,7 +191,7 @@ const MainServices = () => {
                     );
                   })}
                 </div>
-              </div>
+              </motion.div>
             </div>
           );
 
