@@ -29,16 +29,18 @@ const Header = () => {
       className={`header ${whiteBackgroundClass}`}
       initial={{
         opacity: 0,
+        y: -60,
       }}
       whileInView={{
         opacity: 1,
+        y: 0,
         transition: {
           ease: "linear",
           duration: 0.5,
           delay: 1.5,
         },
       }}
-      viewport={{ once: true, amount: 1 }}
+      viewport={{ once: true, amount: 0 }}
     >
       {/*  Show navigation button */}
       <div className="header__show-nav-wrapper">
@@ -99,7 +101,7 @@ const Header = () => {
             Services
           </Link>
           <Link href="#" className="header__link-container--link">
-            Contact
+            Book
           </Link>
           <Link href="#" className="header__link-container--link">
             About Us

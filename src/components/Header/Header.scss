@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  padding: 16px;
+  padding: 0px 16px;
   z-index: 100;
   @include tablet {
     display: flex;
@@ -68,6 +68,7 @@
     display: none;
     @include tablet {
       display: flex;
+      padding: 16px 0px;
     }
   }
   // JS DYNAMIC CLASS
@@ -77,6 +78,8 @@
   &__link-container {
     @include tablet {
       display: flex;
+      justify-content: flex-end;
+      gap: 16px;
     }
     &--link {
       display: block;
@@ -86,29 +89,32 @@
       text-align: right;
       text-decoration: none;
       line-height: 32px;
+      @include tablet {
+        width: fit-content;
+      }
     }
   }
-  // BIRTH AND LOCATION
-  &__birth-location {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 200;
-    padding: 16px;
-    // background-color: rgba(239, 242, 249, 0.05);
-    &--item {
-      font-size: 12px;
-      font-weight: normal;
-      text-decoration: none;
-      width: fit-content;
-      color: $white1;
-    }
-    &--item:nth-child(2) {
-      text-align: right;
-    }
-  }
+  // // BIRTH AND LOCATION
+  // &__birth-location {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   position: fixed;
+  //   bottom: 0;
+  //   left: 0;
+  //   z-index: 200;
+  //   padding: 16px;
+  //   // background-color: rgba(239, 242, 249, 0.05);
+  //   &--item {
+  //     font-size: 12px;
+  //     font-weight: normal;
+  //     text-decoration: none;
+  //     width: fit-content;
+  //     color: $white1;
+  //   }
+  //   &--item:nth-child(2) {
+  //     text-align: right;
+  //   }
+  // }
 }
 // DYNAMIC JS CLASS
 .white-background {
