@@ -19,7 +19,12 @@
     background-color: $darkBlue;
     border: 1px solid $white1;
     color: $white2;
+    @include tablet2 {
+      max-width: 200px;
+      padding: 20px;
+    }
   }
+
   &__button:hover {
     background-color: $white2;
     border-color: $darkBlue;
