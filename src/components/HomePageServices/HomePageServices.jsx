@@ -22,15 +22,31 @@ const HomePageServices = () => {
   return (
     <section className="service-home-page">
       <section className="service-home-page__content">
-        <motion.h2
-          className="service-home-page__header"
-          initial={initialView}
-          whileInView={whileInView}
-          viewport={{ once: true, amount: 1 }}
-        >
-          Explore our beauty services designed to enhance your natural beauty
-          and confidence
-        </motion.h2>
+        <section className="service-home-page__header-container">
+          <motion.h2
+            className="service-home-page__header"
+            initial={initialView}
+            whileInView={whileInView}
+            viewport={{ once: true, amount: 1 }}
+          >
+            Explore our beauty services designed to enhance your natural beauty
+            and confidence
+          </motion.h2>
+          <motion.div
+            className="service-home-page__service-info"
+            initial={initialView}
+            whileInView={whileInView}
+            viewport={{ once: true, amount: 1 }}
+          >
+            <h2 className="service-home-page__service-info--number">40+</h2>
+            <h2 className="service-home-page__service-info--text">
+              services by
+            </h2>
+            <h2 className="service-home-page__service-info--number">9+</h2>
+            <h2 className="service-home-page__service-info--text">Stylists</h2>
+          </motion.div>
+        </section>
+
         <div className="image-text-container">
           <motion.img
             className="image-text-container__image"
