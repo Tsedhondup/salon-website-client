@@ -12,6 +12,8 @@ import pic8 from "../../assets/images/pic8.jpeg";
 import pic9 from "../../assets/images/pic9.jpeg";
 import pic5 from "../../assets/images/pic5.jpeg";
 import pic4 from "../../assets/images/pic4.jpeg";
+import pic10 from "../../assets/images/pic10.jpeg";
+import pic11 from "../../assets/images/pic11.jpeg";
 
 const Gallery = () => {
   const images = [
@@ -27,6 +29,8 @@ const Gallery = () => {
 
     pic4,
     pic5,
+    pic10,
+    pic11,
   ];
   let animationDuration = 0.3;
   const initialView = {
@@ -43,41 +47,43 @@ const Gallery = () => {
   };
   return (
     <section className="gallery">
-      <motion.h2
-        className="gallery__header"
-        initial={initialView}
-        whileInView={whileInView}
-        viewport={{ once: true, amount: 1 }}
-      >
-        Nano's Gallery
-      </motion.h2>
-      <div className="gallery__image-container">
-        {images.map((item) => {
-          const imageEl = (
-            <motion.img
-              key={item}
-              className="gallery__image-container--image"
-              src={item}
-              initial={{
-                opacity: 0,
-                scale: 0.5,
-              }}
-              whileInView={{
-                opacity: 1,
-                scale: 1,
-                transition: {
-                  ease: "linear",
-                  duration: animationDuration,
-                },
-              }}
-              viewport={{ once: true, amount: 1 }}
-            />
-          );
-          animationDuration = animationDuration + 0.1;
-          return imageEl;
-        })}
-      </div>
-      <BookButton />
+      <section className="gallery__content">
+        <motion.h2
+          className="gallery__header"
+          initial={initialView}
+          whileInView={whileInView}
+          viewport={{ once: true, amount: 1 }}
+        >
+          Nano's Gallery
+        </motion.h2>
+        <div className="gallery__image-container">
+          {images.map((item) => {
+            const imageEl = (
+              <motion.img
+                key={item}
+                className="gallery__image-container--image"
+                src={item}
+                initial={{
+                  opacity: 0,
+                  scale: 0.5,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: {
+                    ease: "linear",
+                    duration: animationDuration,
+                  },
+                }}
+                viewport={{ once: true, amount: 1 }}
+              />
+            );
+            animationDuration = animationDuration + 0.1;
+            return imageEl;
+          })}
+        </div>
+        <BookButton />
+      </section>
     </section>
   );
 };

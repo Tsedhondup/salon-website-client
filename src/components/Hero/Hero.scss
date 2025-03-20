@@ -28,6 +28,9 @@
   @include tablet2 {
     height: 700px;
   }
+  @include desktop{
+    height: 800px;
+  }
   &__over-lay {
     background-color: rgba(0, 0, 0, 0.5);
     padding-top: 64px;
@@ -38,6 +41,11 @@
     @include tablet2 {
       padding-top: 10%;
       height: 100%;
+      max-width: 1280px;
+      margin: auto;
+    }
+    @include desktop{
+      padding-top: 5%;
     }
   }
   &__merchant-name {
@@ -88,7 +96,7 @@
       max-width: 180px;
       border: 1px solid $white1;
       color: $white1;
-      @include tablet2{
+      @include tablet2 {
         max-width: 200px;
         padding: 20px;
       }

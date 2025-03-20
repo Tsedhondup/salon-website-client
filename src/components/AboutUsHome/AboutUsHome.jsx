@@ -1,6 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import "./AboutUsHome.scss";
+import BookButton from "../BookButton/BookButton";
+import pic5 from "../../assets/images/pic3.jpeg";
 const AboutUsHome = () => {
   return (
     <section className="about-us-home">
@@ -45,6 +47,7 @@ const AboutUsHome = () => {
             exceptional services in a welcoming environment, ensuring every
             visit is a delightful experience.
           </motion.p>
+          {/* <BookButton /> */}
         </div>
         <div className="about-us-home__text-container">
           <motion.h3
@@ -125,8 +128,29 @@ const AboutUsHome = () => {
             exceptional care.
           </motion.p>
         </div>
+        <div className="about-us-home__image-container">
+          <motion.img
+            src={pic5}
+            alt="white color hair"
+            className="about-us-home__image-container--img"
+            initial={{
+              opacity: 0,
+              x: 60,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                ease: "linear",
+                duration: 1,
+              },
+            }}
+            viewport={{ once: true, amount: 0 }}
+          />
+        </div>
       </div>
-      <div className="about-us-home__book-button-container">
+
+      {/* <div className="about-us-home__book-button-container">
         <motion.a
           className="about-us-home__book-button-container--button"
           href="tel:+14167440019"
@@ -145,7 +169,7 @@ const AboutUsHome = () => {
         >
           Book now
         </motion.a>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -8,10 +8,18 @@
   right: 0;
   z-index: 100;
   padding: 16px;
-  @include tablet {
-    padding: 0px 32px;
-    display: flex;
+
+  &__content {
+    @include tablet {
+      padding: 0px 32px;
+      display: flex;
+    }
+    @include tablet2 {
+      max-width: 1280px;
+      margin: auto;
+    }
   }
+
   // SHOW NAV BUTTON
   &__show-nav-wrapper {
     display: flex;
@@ -91,6 +99,9 @@
       line-height: 32px;
       @include tablet {
         width: fit-content;
+      }
+      @include tablet2{
+        font-size: 15px;
       }
     }
   }

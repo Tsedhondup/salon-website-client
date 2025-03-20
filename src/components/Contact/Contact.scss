@@ -7,8 +7,10 @@
   background-image: url("../../assets/images/nano-salon.jpg");
   background-size: cover;
   margin-top: 16px;
-  &__content {
+  &__content1 {
     background-color: rgba(0, 0, 0, 0.7);
+  }
+  &__content {
     padding: 16px;
     height: 300px;
     display: flex;
@@ -18,6 +20,14 @@
       height: 350px;
       padding: 32px;
     }
+    @include tablet2 {
+      height: 400px;
+      max-width: 1280px;
+      margin: auto;
+    }
+    @include desktop {
+      height: 600px;
+    }
   }
   &__header {
     font-size: 16px;
@@ -25,6 +35,10 @@
     color: $white1;
     border-bottom: 1px solid $white1;
     padding-bottom: 16px;
+    @include tablet2 {
+      font-size: 24px;
+      font-weight: 900;
+    }
   }
   &__booking-info {
     font-weight: 900;
@@ -34,7 +48,9 @@
     text-align: center;
     padding: 16px;
     margin-bottom: 16px;
-
+    @include tablet2 {
+      font-size: 16px;
+    }
     &--phone-number {
       display: block;
       margin: auto;
@@ -49,6 +65,9 @@
       max-width: 180px;
       border: 1px solid $white1;
       color: $white1;
+      @include tablet2 {
+        margin-top: 32px;
+      }
     }
     &--phone-number:hover {
       background-color: $white1;

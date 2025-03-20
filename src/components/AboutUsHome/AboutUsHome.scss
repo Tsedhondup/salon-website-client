@@ -11,20 +11,38 @@
   @include tablet {
     padding: 32px;
   }
+  @include tablet2 {
+    margin-top: 64px;
+  }
+  &__content {
+    @include tablet2 {
+      max-width: 1280px;
+      margin: auto;
+      display: flex;
+      gap: 16px;
+    }
+  }
   &__text-container {
     padding: 16px 0px;
     margin-bottom: 16px;
+
     &--header {
       color: $darkBlue;
       font-size: 20px;
       font-weight: 900;
       margin-bottom: 16px;
+      @include tablet2 {
+        font-size: 24px;
+      }
     }
     &--body {
       color: $darkBlue;
       font-size: 16px;
       font-family: "Roboto", sans-serif;
       line-height: 22px;
+      @include tablet {
+        font-size: 18px;
+      }
     }
   }
   &__book-button-container {
@@ -48,6 +66,17 @@
       background-color: $white2;
       border-color: $darkBlue;
       color: $darkBlue;
+    }
+  }
+
+  &__image-container {
+    display: none;
+    @include tablet2 {
+      display: flex;
+      &--img {
+        height: 600px;
+        object-fit: cover;
+      }
     }
   }
 }
