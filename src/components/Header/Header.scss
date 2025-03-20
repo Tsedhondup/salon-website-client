@@ -8,28 +8,36 @@
   right: 0;
   z-index: 100;
   padding: 16px;
-  @include tablet {
-    padding: 0px 32px;
-    display: flex;
+
+  &__content {
+    @include tablet {
+      padding: 0px 32px;
+      display: flex;
+    }
+    @include tablet2 {
+      max-width: 1280px;
+      margin: auto;
+    }
   }
+
   // SHOW NAV BUTTON
   &__show-nav-wrapper {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     z-index: 100;
-    // @include tablet {
-    //   display: none;
-    // }
+
     &--brand-name {
       color: $darkBlue;
-      // color: $blackMain;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 20px;
       font-weight: normal;
       position: relative;
       z-index: 200;
+      @include tablet2 {
+        font-weight: 900;
+      }
     }
     &--open-button,
     &--close-button {
@@ -91,6 +99,9 @@
       line-height: 32px;
       @include tablet {
         width: fit-content;
+      }
+      @include tablet2{
+        font-size: 15px;
       }
     }
   }

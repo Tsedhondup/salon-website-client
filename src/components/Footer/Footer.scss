@@ -6,6 +6,15 @@
 .footer {
   padding: 16px;
   margin-top: 16px;
+  @include tablet {
+    padding: 32px;
+  }
+  &__content {
+    @include tablet2 {
+      max-width: 1280px;
+      margin: auto;
+    }
+  }
   &__salon-info {
     &--name {
       color: $armyBlue;
@@ -16,18 +25,32 @@
       margin-bottom: 16px;
       border-bottom: 1px solid $armyBlue;
       //   width: fit-content;
+      @include tablet2 {
+        font-size: 36px;
+        text-align: left;
+      }
     }
     &--title {
+      color: $armyBlue;
       font-size: 14px;
       font-weight: bold;
       text-align: center;
       line-height: 22px;
       margin-bottom: 32px;
+      @include tablet2 {
+        font-size: 24px;
+        text-align: left;
+      }
     }
     &--location {
       font-size: 14px;
       text-align: center;
       padding-bottom: 10px;
+      @include tablet2 {
+        font-size: 18px;
+        text-align: left;
+        padding-bottom: 16px;
+      }
     }
     &--address {
       display: block;
@@ -40,6 +63,11 @@
       color: $darkBlue;
       width: 240px;
       margin: auto;
+      @include tablet2 {
+        font-size: 18px;
+        text-align: left;
+        width: 100%;
+      }
     }
     &--phone-number {
       display: block;
@@ -50,6 +78,19 @@
       text-align: center;
       font-weight: bold;
       font-family: "Roboto", sans-serif;
+      @include tablet2 {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: left;
+        margin-bottom: 96px;
+      }
+    }
+  }
+
+  &__button-container {
+    @include tablet2 {
+      display: flex;
+      justify-content: flex-start;
     }
   }
   &__social-header {
@@ -60,11 +101,18 @@
   &__navigations {
     text-align: center;
     margin-top: 32px;
+    @include tablet2 {
+      margin-top: 64px;
+    }
     &__links {
       display: block;
       font-size: 14px;
       font-weight: bold;
       padding-bottom: 16px;
+      @include tablet2 {
+        font-size: 24px;
+        text-align: left;
+      }
     }
   }
   &__social-container {
@@ -81,6 +129,10 @@
       align-items: center;
       width: 20px;
       height: 20px;
+      @include tablet2 {
+        width: 30px;
+        height: 30px;
+      }
     }
     &--icon-insta,
     &--icon-tiktok {
@@ -93,6 +145,10 @@
     &--icon-tiktok {
       color: $darkBlue;
       height: 15px;
+      @include tablet2 {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
   &__copy-right-container {
@@ -103,6 +159,9 @@
       text-align: center;
       font-size: 13px;
       font-weight: bold;
+      @include tablet2 {
+        font-size: 18px;
+      }
     }
   }
 }

@@ -1,38 +1,48 @@
 @import "../../styles/partials/mixins.scss";
 @import "../../styles/partials/variables";
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap"); //
-// * {
-//   // font-family: "Roboto", sans-serif;
-//   font-family: "Aboreto", serif;
-//   margin: 0;
-//   width: 100%;
-//   box-sizing: border-box;
-// }
+
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
 .about-us-home {
   font-family: "Aboreto", serif;
   padding: 16px;
+  @include tablet {
+    padding: 32px;
+  }
+  @include tablet2 {
+    margin-top: 64px;
+  }
+  &__content {
+    @include tablet2 {
+      max-width: 1280px;
+      margin: auto;
+      display: flex;
+      gap: 16px;
+    }
+  }
   &__text-container {
-    // background-color: rgba(239, 242, 249, 0.4);
-    // background-color: rgba(97, 125, 161, 0.1);
-
-    padding: 16px;
+    padding: 16px 0px;
     margin-bottom: 16px;
+
     &--header {
       color: $darkBlue;
       font-size: 20px;
       font-weight: 900;
       margin-bottom: 16px;
+      @include tablet2 {
+        font-size: 24px;
+      }
     }
     &--body {
       color: $darkBlue;
       font-size: 16px;
-      //   font-weight: bold;
       font-family: "Roboto", sans-serif;
-      //   font-family: "Cinzel", serif;
-
       line-height: 22px;
+      @include tablet {
+        font-size: 18px;
+      }
     }
   }
   &__book-button-container {
@@ -56,6 +66,17 @@
       background-color: $white2;
       border-color: $darkBlue;
       color: $darkBlue;
+    }
+  }
+
+  &__image-container {
+    display: none;
+    @include tablet2 {
+      display: flex;
+      &--img {
+        height: 600px;
+        object-fit: cover;
+      }
     }
   }
 }

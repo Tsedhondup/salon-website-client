@@ -5,7 +5,15 @@
 
 .homepage-service-lists {
   margin-top: 16px;
-
+  @include tablet2 {
+    padding: 32px;
+  }
+  &__content {
+    @include tablet2 {
+      max-width: 1280px;
+      margin: auto;
+    }
+  }
   &__header {
     font-size: 16px;
     line-height: 24px;
@@ -18,6 +26,12 @@
       margin: auto;
       margin-top: 64px;
       margin-bottom: 16px;
+    }
+    @include tablet2 {
+      width: 100%;
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 32px;
     }
   }
   &__list-container {
@@ -36,17 +50,35 @@
       height: 240px;
       padding: 32px;
     }
+    @include tablet2 {
+      height: 300px;
+      width: 50%;
+      background-color: #ffffff;
+    }
     &--header {
       color: $white2;
       font-size: 16px;
       font-weight: normal;
       padding: 5px 0px;
       border-bottom: 1px solid $white2;
+      @include tablet2 {
+        font-size: 24px;
+        font-weight: 900;
+        padding: 10px 0px;
+        color: $darkBlue;
+        border-bottom: 1px solid $darkBlue;
+      }
     }
     &--body {
       font-size: 13px;
       color: $white2;
       padding: 5px 0px;
+      @include tablet2 {
+        font-size: 16px;
+        font-weight: 900;
+        padding: 10px 0px;
+        color: $darkBlue;
+      }
     }
   }
   &__list-container:nth-child(2) {
@@ -54,12 +86,16 @@
   }
   &__list-container:nth-child(3) {
     background-image: url("../../assets/images/hair-cut.jpg");
+    display: flex;
+    justify-content: flex-end;
   }
   &__list-container:nth-child(4) {
     background-image: url("../../assets/images/lash-extension.jpg");
   }
   &__list-container:nth-child(5) {
     background-image: url("../../assets/images/hair-color.jpg");
+    display: flex;
+    justify-content: flex-end;
   }
   &__list-container:nth-child(6) {
     background-image: url("../../assets/images/bearding.jpg");
@@ -87,6 +123,10 @@
       max-width: 180px;
       border: 1px solid $darkBlue;
       color: $darkBlue;
+      @include tablet2 {
+        max-width: 200px;
+        padding: 20px;
+      }
     }
     &--button:hover {
       background-color: $darkBlue;

@@ -89,12 +89,6 @@ const Hero = () => {
           </div>
         </section>
       </section>
-      {/* <section className="hero__birth-location">
-        <h3 className="hero__birth-location__birth">since 2022</h3>
-        <h3 className="hero__birth-location__location">
-          The Albion Mall, 1530 Albion Rd, Etobicoke, ON M9V 1B4
-        </h3>
-      </section> */}
     </motion.section>
   );
 };
