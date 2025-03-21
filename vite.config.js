@@ -5,4 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ["**/*.woff", "**/*.woff2"], // Ensure Vite recognizes font files
+  server: {
+    historyApiFallback: true, // Ensures React handles routing
+  },
 });
