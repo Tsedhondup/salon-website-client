@@ -15,7 +15,7 @@ const Hero = () => {
           duration: 0.5,
         },
       }}
-      viewport={{ once: true, amount: 1 }}
+      viewport={{ once: true, amount: 0 }}
     >
       <section className="hero__over-lay">
         <section className="hero__content">

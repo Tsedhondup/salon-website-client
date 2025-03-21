@@ -4,9 +4,13 @@ import HomePage from "./pages/HomePage/HomePage.jsx";
 import ServicePage from "./pages/ServicePage/ServicePage.jsx";
 import { useEffect } from "react";
 function App() {
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // }, []);
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo(0, 0);
   }, []);
+
   return (
     <>
       <BrowserRouter>

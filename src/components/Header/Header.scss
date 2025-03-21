@@ -8,7 +8,9 @@
   right: 0;
   z-index: 100;
   padding: 16px;
-
+  @include tablet {
+    padding: 0px;
+  }
   &__content {
     @include tablet {
       padding: 0px 32px;
@@ -100,7 +102,7 @@
       @include tablet {
         width: fit-content;
       }
-      @include tablet2{
+      @include tablet2 {
         font-size: 15px;
       }
     }

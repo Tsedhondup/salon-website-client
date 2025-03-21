@@ -12,6 +12,12 @@
     padding: 32px;
     padding-top: 20%;
   }
+  &__content {
+    @include tablet2 {
+      max-width: 1280px;
+      margin: auto;
+    }
+  }
   &__header {
     color: $white2;
     font-size: 18px;
@@ -21,6 +27,11 @@
     padding: 2px 0px;
     margin-bottom: 2px;
     border-bottom: 1px solid $white2;
+    @include tablet2 {
+      font-size: 32px;
+      font-weight: 900;
+      padding-bottom: 10px;
+    }
   }
   // Price reminder
   &__price-reminder {
@@ -33,6 +44,10 @@
     margin-bottom: 64px;
     @include tablet {
       margin-bottom: 128px;
+    }
+    @include tablet2 {
+      font-size: 16px;
+      padding-top: 10px;
     }
   }
 
@@ -71,6 +86,11 @@
       width: 390px;
       font-size: 13px;
     }
+    @include tablet2 {
+      font-size: 18px;
+      font-weight: normal;
+      width: 500px;
+    }
   }
   &__list-Beard-header,
   &__list-Brow-header,
@@ -90,6 +110,11 @@
       width: 390px;
       font-size: 13px;
     }
+    @include tablet2 {
+      font-size: 18px;
+      font-weight: normal;
+      width: 500px;
+    }
   }
 
   &__list-item {
@@ -105,6 +130,10 @@
         width: 390px;
         height: 370px;
       }
+      @include tablet2 {
+        width: 600px;
+        height: 500px;
+      }
     }
 
     &--Hair-image,
@@ -112,7 +141,7 @@
     &--Waxing-image {
       position: relative;
     }
-    // Service Category
+    // Service Category title
     &--Lash-title,
     &--Facial-title,
     &--Waxing-title {
@@ -127,6 +156,10 @@
       @include tablet {
         top: -10%;
         font-size: 18px;
+      }
+      @include tablet2 {
+        font-size: 24px;
+        top: -11%;
       }
     }
     &--Beard-title,
@@ -144,6 +177,10 @@
         top: -10%;
         font-size: 18px;
       }
+      @include tablet2 {
+        font-size: 24px;
+        top: -11%;
+      }
     }
     // GENERAL TEXT CONTAINER
     &--texts {
@@ -151,6 +188,9 @@
       padding: 10px 0px;
       @include tablet {
         width: 390px;
+      }
+      @include tablet2 {
+        width: 500px;
       }
     }
 
@@ -164,6 +204,9 @@
       @include tablet {
         top: 108%;
       }
+      @include tablet2 {
+        top: 109%;
+      }
     }
     &--Beard-texts,
     &--Brow-texts,
@@ -173,6 +216,9 @@
       left: 0;
       @include tablet {
         top: 108%;
+      }
+      @include tablet2 {
+        top: 109%;
       }
     }
     &--category {
@@ -186,22 +232,56 @@
     }
   }
   &__list-item:nth-child(1) {
-    margin-bottom: 290px;
+    margin-bottom: 250px;
+    @include tablet {
+      margin-bottom: 300px;
+    }
+    @include tablet2 {
+      margin-bottom: 360px;
+    }
   }
   &__list-item:nth-child(2) {
-    margin-bottom: 216px;
+    margin-bottom: 200px;
+    @include tablet {
+      margin-bottom: 215px;
+    }
+    @include tablet2 {
+      margin-bottom: 290px;
+    }
   }
   &__list-item:nth-child(3) {
-    margin-bottom: 188px;
+    margin-bottom: 178px;
+    @include tablet {
+      margin-bottom: 200px;
+    }
+    @include tablet2 {
+      margin-bottom: 260px;
+    }
   }
   &__list-item:nth-child(4) {
     margin-bottom: 424px;
+    @include tablet {
+      margin-bottom: 370px;
+    }
+    @include tablet2 {
+      margin-bottom: 430px;
+    }
   }
   &__list-item:nth-child(5) {
-    margin-bottom: 368px;
+    margin-bottom: 358px;
+    @include tablet {
+      margin-bottom: 420px;
+    }
+    @include tablet2 {
+      margin-bottom: 520px;
+    }
   }
   &__list-item:nth-child(6) {
     margin-bottom: 730px;
+
+    @include tablet2 {
+      margin-bottom: 850px;
+    }
   }
 
   &__service-detail-content {
@@ -211,6 +291,9 @@
     padding: 2px 0px;
     @include tablet {
       padding: 4px 0px;
+    }
+    @include tablet2 {
+      padding: 6px 0px;
     }
 
     &--name {
@@ -223,6 +306,9 @@
       @include tablet {
         font-size: 14px;
       }
+      @include tablet2 {
+        font-size: 18px;
+      }
     }
     &--price {
       font-size: 13px;
@@ -232,6 +318,9 @@
       color: $white2;
       @include tablet {
         font-size: 14px;
+      }
+      @include tablet2 {
+        font-size: 18px;
       }
     }
   }
