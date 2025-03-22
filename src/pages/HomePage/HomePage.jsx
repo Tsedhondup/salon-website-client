@@ -8,13 +8,7 @@ import AboutUsHome from "../../components/AboutUsHome/AboutUsHome";
 import HomePageServiceLists from "../../components/HomePageServiceLists/HomePageServiceLists";
 import BookButton from "../../components/BookButton/BookButton";
 import Testimonials from "../../components/Testimonials/Testimonials";
-// import { useEffect } from "react";
-
 const HomePage = () => {
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // }, []);
-
   return (
     <section>
       <Header />
